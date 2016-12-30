@@ -64,7 +64,9 @@ def add_instance(utter, speech_act, semantic_tagged):
     '''
     fin.write(' '.join(original_sent)+'\n')
     fout.write(' '.join(IOB_tag)+'\n')
+    # choose the first one as the label
     flabel.write( sa_label_list[0]  +'\n')
+    # merge all the label into a unique label
     flabel2.write( '_'.join(sa_label_list)+'\n')
 
     # print semantic_instance
@@ -114,7 +116,7 @@ for call in trainset:
     print(count)
     for (log_utter, translations, label_utter) in call:
         # if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
-        if (log_utter['speaker'] == 'Guide'):
+        if (log_utter['speaker'] == 'Tourist'):
             add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
     #break
     count += 1
