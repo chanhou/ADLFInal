@@ -1,0 +1,16 @@
+task, subtask, schedule, stat, N, result
+SLU, speech_act, all, precision, 2047, 0.490473864191
+SLU, speech_act, all, recall, 2736, 0.366959064327
+SLU, speech_act, all, f1, 3779, 0.419820196529
+SLU, speech_act, act, precision, 2047, 0.746458231558
+SLU, speech_act, act, recall, 2047, 0.746458231558
+SLU, speech_act, act, f1, 2566, 0.746458231558
+SLU, semantic_tagged, detection, precision, 0, None
+SLU, semantic_tagged, detection, recall, 2191, 0.0
+SLU, semantic_tagged, detection, f1, 2191, None
+SLU, semantic_tagged, all, precision, 0, None
+SLU, semantic_tagged, all, recall, 2191, 0.0
+SLU, semantic_tagged, all, f1, 2191, None
+SLU, semantic_tagged, class, precision, 0, None
+SLU, semantic_tagged, class, recall, 2191, 0.0
+SLU, semantic_tagged, class, f1, 2191, None
