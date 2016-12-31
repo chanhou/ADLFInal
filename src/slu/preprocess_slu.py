@@ -123,7 +123,10 @@ for call in trainset:
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
         # if (log_utter['speaker'] == 'Guide'):
-            add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            if len(translations['translated']) > 0:
+                top_hyp = translations['translated'][0]['hyp']
+                add_instance(top_hyp, label_utter['speech_act'], label_utter['semantic_tagged'])
+            #add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
     #break
     count += 1
 
@@ -145,11 +148,12 @@ ftest = open('./rnn-nlu/data/slu/'+testF+'/'+testF+'.seq.in','w')
 for call in testset:
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide'):
-            if len(translations['translated']) > 0:
-                top_hyp = translations['translated'][0]['hyp']
-                tokenized = __tokenize(top_hyp)
-                word_feats = ' '.join([word.lower() for word, _ in tokenized])
-                ftest.write(word_feats+'\n')
+            #if len(translations['translated']) > 0:
+            #    top_hyp = translations['translated'][0]['hyp']
+            #    tokenized = __tokenize(top_hyp)
+            tokenized = __tokenize(log_utter['transcript'])
+            word_feats = ' '.join([word.lower() for word, _ in tokenized])
+            ftest.write(word_feats+'\n')
 
 ftest.close()
 #if __name__ == "__main__":

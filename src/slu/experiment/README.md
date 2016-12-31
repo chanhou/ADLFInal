@@ -13,3 +13,7 @@
 
 # exp2
 - diff with exp1: Include tourists into training data
+
+# exp3
+Diff with exp2, training using translated chinease to train and testing no need to translate
+
