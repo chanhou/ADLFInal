@@ -40,8 +40,8 @@ class DirectLabelProjection:
     def project(self, cn_utter, en_translated, align, en_tagged):
         cn_word_id_map = self.__get_char_word_map(cn_utter, [word for word, _ in align])
         en_word_id_map = self.__get_char_word_map(en_translated, en_translated.split())
-
-        en_tagged_unit_id_map = self.__get_char_word_map(en_translated.lower(), [word for word, _ in en_tagged])
+        
+        en_tagged_unit_id_map = self.__get_char_word_map(en_translated.lower(), [word for word in en_tagged])
 
         result = {}
 
@@ -155,27 +155,28 @@ def main(argv):
                 slu_result = {'utter_index': log_utter['utter_index']}
                 if len(translations['translated']) > 0:
                     top_hyp = translations['translated'][0]['hyp']
-                    pred_act = intent.readline()
-                    pred_semantic = slot.readline()
+                    pred_act = intent.readline()[:-1]
+                    pred_semantic = slot.readline()[:-1].split(' ')
                     #pred_act, pred_semantic = slu.pred(top_hyp)
 
                     combined_act = {}
-                    for act_label in reduce(operator.add, pred_act):
-                        m = re.match('^([^_]+)_(.+)$', act_label)
-                        act = m.group(1)
-                        attr = m.group(2)
-                        if act not in combined_act:
-                            combined_act[act] = []
-                        if attr not in combined_act[act]:
-                            combined_act[act].append(attr)
+                    #for act_label in reduce(operator.add, pred_act):
+                    #print(act_label)
+                    act_label = pred_act
+                    m = re.match('^([^_]+)_(.+)$', act_label)
+                    act = m.group(1)
+                    attr = m.group(2)
+                    if act not in combined_act:
+                        combined_act[act] = []
+                    if attr not in combined_act[act]:
+                        combined_act[act].append(attr)
 
                     slu_result['speech_act'] = []
                     for act in combined_act:
                         attr = combined_act[act]
                         slu_result['speech_act'].append({'act': act, 'attributes': attr})
-
-                    align = translations['translated'][0]['align']
-
+                    align = translations['translated'][0]['align'] 
+                    
                     projected = projection.project(log_utter['transcript'], top_hyp, align, pred_semantic)
                     slu_result['semantic_tagged'] = projection.convert_to_tagged_utter(projected)
                 else:
