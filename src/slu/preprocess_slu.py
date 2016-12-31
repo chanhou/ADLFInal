@@ -13,8 +13,8 @@ import re
 #####
 # which data set to chooce
 ####
-targetF = 'valid' # train, valid
-testF = 'test_slu' # dev, test_slu
+targetF = 'train' # train, valid
+testF = 'dev' # dev, test_slu
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
@@ -121,8 +121,8 @@ count = 0
 for call in trainset:
     print(count)
     for (log_utter, translations, label_utter) in call:
-        # if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
-        if (log_utter['speaker'] == 'Guide'):
+        if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
+        # if (log_utter['speaker'] == 'Guide'):
             add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
     #break
     count += 1
