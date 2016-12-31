@@ -12,8 +12,6 @@ from __future__ import print_function
 import math
 import os
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
 import time
 
 import numpy as np
@@ -25,6 +23,9 @@ import multi_task_model
 
 import subprocess
 import stat
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 
 #tf.app.flags.DEFINE_float("learning_rate", 0.1, "Learning rate.")
