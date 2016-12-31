@@ -1,5 +1,5 @@
 {
-    "wall_time": 0.4088420867919922, 
+    "wall_time": 0.4428720474243164, 
     "dataset": "dstc5_dev", 
     "task_type": "SLU", 
     "role_type": "GUIDE", 
@@ -10,7 +10,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CLOSING"
                             ], 
                             "act": "FOL"
                         }
@@ -22,7 +22,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "OPENING"
                             ], 
                             "act": "FOL"
                         }
@@ -94,7 +94,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -130,7 +130,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -166,9 +166,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "\u662f-\u5f00\u59cb%\u5443\u73b0\u5728\u7684\u6c14\u6e29\u5927\u6982\u662f\u4e09\u5341\u4e00\u5ea6\u5de6\u53f3\uff0c\u5e73\u5747%\u5566\uff0c%\u54e6\uff1f", 
@@ -178,7 +178,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -264,7 +264,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "\u53ef\u4ee5\u7684\uff0c%\u55ef\u3002", 
@@ -646,7 +646,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -682,7 +682,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -759,7 +759,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u90a3\u4e2a\u5730\u65b9\u53bb\u7684\u8bdd%\u5443\u662f\u9700\u8981%\u5443\u642d\u5df4\u58eb\uff0c", 
+                    "semantic_tagged": "%\u5443<loc cat=\"CULTURAL\">\u90a3\u4e2a</loc>\u5730\u65b9\u53bb\u7684\u8bdd%\u5443\u662f\u9700\u8981%\u5443\u642d\u5df4\u58eb\uff0c", 
                     "utter_index": 133
                 }, 
                 {
@@ -900,7 +900,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
                     "semantic_tagged": "%\u5475\uff0c\u4f60\u7b49\u6211\u4e00\u4e0b%\u554a\uff1f", 
@@ -936,7 +936,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
                     "semantic_tagged": "%\u55ef\uff0c\u770b\u5230%\u5475\uff1f", 
@@ -1090,9 +1090,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u54e6\uff0c\u91ce\u751f\u690d\u7269\uff0c\u5929\u7136\u690d\u7269\uff0c%\u54e6\u3002", 
@@ -1114,12 +1114,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u6709\u516d\u5341\u4e03\uff0c\u4e03\u5341\u4e94\uff0c\u4e00\u4e03\u96f6\uff0c\u4e00\u4e03\u4e00\uff0c%\u5443\u8fd9\u4e9b\u5df4\u58eb\uff0c", 
+                    "semantic_tagged": "%\u5443\u6709<area cat=\"CITY\">\u516d\u5341\u4e03</area>\uff0c\u4e03\u5341\u4e94\uff0c\u4e00\u4e03\u96f6\uff0c\u4e00\u4e03\u4e00\uff0c%\u5443\u8fd9\u4e9b\u5df4\u58eb\uff0c", 
                     "utter_index": 187
                 }, 
                 {
@@ -1246,7 +1246,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -2040,10 +2040,10 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
-                    "semantic_tagged": "%\u54e6\uff0c\u4f60\u7684\u90a3\u4e2a%\u5443\u9884\u7b97\u554a\u662f\u4f4f\u600e\u6837\u7684\u9152\u5e97\uff1f", 
+                    "semantic_tagged": "%\u54e6\uff0c<area cat=\"CITY\">\u4f60\u7684</area>\u90a3\u4e2a%\u5443\u9884\u7b97\u554a\u662f\u4f4f\u600e\u6837\u7684\u9152\u5e97\uff1f", 
                     "utter_index": 313
                 }, 
                 {
@@ -2170,7 +2170,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "EXPLAIN"
                             ], 
                             "act": "FOL"
                         }
@@ -2206,7 +2206,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "OPENING"
                             ], 
                             "act": "FOL"
                         }
@@ -2247,7 +2247,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5730\u94c1\u7ad9%\u554a\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u5730\u94c1\u7ad9</loc>%\u554a\u3002", 
                     "utter_index": 345
                 }, 
                 {
@@ -2292,7 +2292,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u55ef\u5b83\u662f\u521a-", 
@@ -2338,7 +2338,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -2362,9 +2362,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u666e\u901a\uff0c%\u55ef\u3002", 
@@ -2391,7 +2391,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4ece-\u5982\u679c\u4f60\u770b\u4f60%\u5443\u5230\u4e86\u6211\u4eec\u65b0\u52a0\u5761\u673a\u573a\u554a\uff0c", 
+                    "semantic_tagged": "\u4ece-<time cat=\"INTERVAL\">\u5982\u679c</time>\u4f60\u770b\u4f60%\u5443\u5230\u4e86\u6211\u4eec\u65b0\u52a0\u5761\u673a\u573a\u554a\uff0c", 
                     "utter_index": 368
                 }, 
                 {
@@ -2566,7 +2566,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -2595,7 +2595,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5341\u5230\u5341\u4e94\u5206\u949f\u5c31\u5230\u4e86\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u5341</loc>\u5230\u5341\u4e94\u5206\u949f\u5c31\u5230\u4e86\u3002", 
                     "utter_index": 394
                 }, 
                 {
@@ -2674,12 +2674,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5bf9\uff0c%\u5443\uff0c\u5728\u65b0\u52a0\u5761%\u54e6\uff0c", 
+                    "semantic_tagged": "\u5bf9\uff0c%<area cat=\"CITY\">\u5443</area>\uff0c\u5728\u65b0\u52a0\u5761%\u54e6\uff0c", 
                     "utter_index": 410
                 }, 
                 {
@@ -2698,7 +2698,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -2710,9 +2710,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
                     "semantic_tagged": "\u4f46\u662f\u6211\u5efa\u8bae%\u5475-", 
@@ -2775,7 +2775,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4f60\u770b\uff0c\u5b83\u662f\u4e2a-\u5b83\u662f\u9a6c\u6765\u6751\u561b\uff0c", 
+                    "semantic_tagged": "\u4f60\u770b\uff0c\u5b83\u662f\u4e2a-<loc cat=\"ATTRACTION\">\u5b83</loc>\u662f\u9a6c\u6765\u6751\u561b\uff0c", 
                     "utter_index": 423
                 }, 
                 {
@@ -2799,7 +2799,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5b83\u5c31\u5356\u4e86\u5f88\u591a\u9a6c\u6765\u98df\u7269\u3002", 
+                    "semantic_tagged": "\u5b83\u5c31<food cat=\"MAIN\">\u5356</food>\u4e86\u5f88\u591a\u9a6c\u6765\u98df\u7269\u3002", 
                     "utter_index": 427
                 }, 
                 {
@@ -2842,12 +2842,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u9a6c\u6765\u98df\u7269%\u554a\uff0c\u57fa\u672c\u4e0a%\u554a\uff0c\u5b83%\u5443\u662f%\u5443\u9999\uff0c\u5f88\u9999\u3002", 
+                    "semantic_tagged": "\u9a6c\u6765\u98df\u7269%\u554a\uff0c\u57fa\u672c\u4e0a%\u554a\uff0c<food cat=\"MAIN\">\u5b83</food>%\u5443\u662f%\u5443\u9999\uff0c\u5f88\u9999\u3002", 
                     "utter_index": 436
                 }, 
                 {
@@ -3243,7 +3243,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4ed6\u4eec\u662f\u4e0d\u80fd\u559d\u9152-", 
+                    "semantic_tagged": "\u4ed6\u4eec<loc cat=\"CULTURAL\">\u662f</loc>\u4e0d\u80fd\u559d\u9152-", 
                     "utter_index": 484
                 }, 
                 {
@@ -3483,7 +3483,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u5c31\u662f-\u5982\u679c%\u5443\u6446\u5728\u5bb6\u91cc\u53c8\u80fd\u60f3\u8d77\u65b0\u52a0\u5761\u7684%\u5475\uff0c", 
+                    "semantic_tagged": "%\u5443\u5c31\u662f-\u5982\u679c%<area cat=\"CITY\">\u5443</area>\u6446\u5728\u5bb6\u91cc\u53c8\u80fd\u60f3\u8d77\u65b0\u52a0\u5761\u7684%\u5475\uff0c", 
                     "utter_index": 518
                 }, 
                 {
@@ -3502,7 +3502,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -3531,7 +3531,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u662f\u65b0\u52a0\u5761\u7684\u6807\u5fd7\u561b\u3002", 
+                    "semantic_tagged": "%\u5443<area cat=\"CITY\">\u662f</area>\u65b0\u52a0\u5761\u7684\u6807\u5fd7\u561b\u3002", 
                     "utter_index": 523
                 }, 
                 {
@@ -3550,7 +3550,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -3586,7 +3586,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -3603,7 +3603,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u516c\u56ed\u554a\uff0c%\u5443\u9c7c\u5c3e\u72ee\u516c\u56ed%\u5443\u91cc\u9762\u5f53\u7136\u6709\u4e00\u5934\u9c7c\u5c3e\u72ee\u50cf%\u5566\uff0c%\u54e6\uff1f", 
+                    "semantic_tagged": "\u516c\u56ed\u554a\uff0c%<loc cat=\"ATTRACTION\">\u5443</loc>\u9c7c\u5c3e\u72ee\u516c\u56ed%\u5443\u91cc\u9762\u5f53\u7136\u6709\u4e00\u5934\u9c7c\u5c3e\u72ee\u50cf%\u5566\uff0c%\u54e6\uff1f", 
                     "utter_index": 533
                 }, 
                 {
@@ -3975,7 +3975,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u55ef\uff0c\u8fd9\u4e2a\u5c31\u662f%\u5443\u6211\u4eec\u7684\u9c7c\u5c3e\u72ee\u516c\u56ed\u4e86%\u54e6\u3002", 
+                    "semantic_tagged": "%\u55ef\uff0c\u8fd9\u4e2a<loc cat=\"ATTRACTION\">\u5c31\u662f</loc>%\u5443\u6211\u4eec\u7684\u9c7c\u5c3e\u72ee\u516c\u56ed\u4e86%\u54e6\u3002", 
                     "utter_index": 583
                 }, 
                 {
@@ -4150,7 +4150,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -4174,7 +4174,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -4306,9 +4306,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "\u54c7%\u54e6\u5473\u9053%\u54e6\u3002", 
@@ -4690,9 +4690,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u770b\u8868\u6f14\u3002", 
@@ -4851,7 +4851,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u65b0\u52a0\u5761\u6709%\u5443\u73b0\u5728\u6709\u4e03\u5341\u591a\u4e2a\u5730\u70b9\u554a\u3002", 
+                    "semantic_tagged": "\u65b0\u52a0\u5761\u6709%<area cat=\"CITY\">\u5443</area>\u73b0\u5728\u6709\u4e03\u5341\u591a\u4e2a\u5730\u70b9\u554a\u3002", 
                     "utter_index": 706
                 }, 
                 {
@@ -4954,7 +4954,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -5098,7 +5098,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -5350,7 +5350,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -5386,7 +5386,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -5518,7 +5518,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -5554,7 +5554,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -5652,7 +5652,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u5bf9\u5bf9\uff0c\u514b\u62c9\u7801\u5934\u3002", 
@@ -5698,12 +5698,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u514b\u62c9\u7801\u5934\u8fd9\u4e2a\u662f-", 
+                    "semantic_tagged": "\u514b\u62c9\u7801\u5934<loc cat=\"ATTRACTION\">\u8fd9\u4e2a\u662f</loc>-", 
                     "utter_index": 840
                 }, 
                 {
@@ -5722,9 +5722,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u55ef\uff0c\u662f%\u5443\u9152\u5427\u4e00\u6761\u8857\u3002", 
@@ -5794,9 +5794,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u8fd9\u4e2a\u662f\u665a\u4e0a%\u54e6\uff0c\u4f60\u770b\u3002", 
@@ -6027,7 +6027,7 @@
                             "act": "QST"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u4f60\u770b\uff0c%\u5443\u6cb3\u4e0a\u4e0d\u662f\u6709\u8239\u5417\uff1f", 
+                    "semantic_tagged": "%\u5443\u4f60\u770b\uff0c%<area cat=\"CITY\">\u5443</area>\u6cb3\u4e0a\u4e0d\u662f\u6709\u8239\u5417\uff1f", 
                     "utter_index": 882
                 }, 
                 {
@@ -6382,7 +6382,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -6399,14 +6399,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6cb3-", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u6cb3</area>-", 
                     "utter_index": 924
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -6447,7 +6447,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5750\u8239\u6e38\u65b0\u52a0\u5761\u6cb3\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u5750\u8239</loc>\u6e38\u65b0\u52a0\u5761\u6cb3\uff0c", 
                     "utter_index": 932
                 }, 
                 {
@@ -6526,9 +6526,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u554a%\u5475\u3002", 
@@ -6562,7 +6562,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "HOW_MUCH"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -6663,7 +6663,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u9c7c\u5c3e\u72ee\u516c\u56ed\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u9c7c\u5c3e\u72ee</loc>\u516c\u56ed\uff0c", 
                     "utter_index": 969
                 }, 
                 {
@@ -6766,7 +6766,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "HOW_MUCH"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -6838,9 +6838,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u55ef\u8fd9\u6837\uff0c%\u55ef\u3002", 
@@ -6999,14 +6999,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u7136\u540e\u5370\u5ea6\u4eba\u5462\uff0c%\u5443\u5360\u4e86\u767e\u5206\u4e4b\u4e5d\uff0c", 
+                    "semantic_tagged": "\u7136\u540e<area cat=\"CITY\">\u5370\u5ea6\u4eba</area>\u5462\uff0c%\u5443\u5360\u4e86\u767e\u5206\u4e4b\u4e5d\uff0c", 
                     "utter_index": 1022
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7054,7 +7054,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7251,7 +7251,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6240\u4ee5\u6765\u5230\u65b0\u52a0\u5761\uff0c", 
+                    "semantic_tagged": "\u6240\u4ee5<area cat=\"CITY\">\u6765\u5230</area>\u65b0\u52a0\u5761\uff0c", 
                     "utter_index": 1055
                 }, 
                 {
@@ -7390,7 +7390,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7570,7 +7570,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7606,7 +7606,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7702,7 +7702,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -7786,9 +7786,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u6bd4\u8f83\u70ed\u3002", 
@@ -7870,7 +7870,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -8062,9 +8062,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5475\uff0c\u540d\u80dc\u4e16\u754c\uff0c%\u54e6\u3002", 
@@ -8208,7 +8208,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u5bf9\u8d4c\u573a\u3002", 
@@ -8254,7 +8254,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -8578,9 +8578,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u55ef\uff0c\u8fd9\u4e2a\u5c31\u662f\u5723\u9676\u6c99\u5c9b\uff0c", 
@@ -8595,7 +8595,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u54e6\uff0c\u8fd9\u4e2a\u662f\u5723\u9676\u6c99\u5c9b\u3002", 
+                    "semantic_tagged": "%\u54e6\uff0c<loc cat=\"ATTRACTION\">\u8fd9\u4e2a</loc>\u662f\u5723\u9676\u6c99\u5c9b\u3002", 
                     "utter_index": 1254
                 }, 
                 {
@@ -8619,7 +8619,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u8fd9\u4e2a\u5723\u9676\u6c99\u5c9b\u554a\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u8fd9\u4e2a</loc>\u5723\u9676\u6c99\u5c9b\u554a\uff0c", 
                     "utter_index": 1257
                 }, 
                 {
@@ -8662,7 +8662,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -8674,7 +8674,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "QST"
                         }
@@ -8811,7 +8811,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u7136\u540e%\u5443\u53ef\u4ee5\u5728\u91cc\u9762\u73a9\u4e0a\u4e00\u6574\u5929\u7684\u3002", 
+                    "semantic_tagged": "\u7136\u540e%\u5443<time cat=\"INTERVAL\">\u53ef\u4ee5</time>\u5728\u91cc\u9762\u73a9\u4e0a\u4e00\u6574\u5929\u7684\u3002", 
                     "utter_index": 1282
                 }, 
                 {
@@ -8907,7 +8907,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u53ea\u6709\u65b0\u52a0\u5761\uff0c", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u53ea\u6709</area>\u65b0\u52a0\u5761\uff0c", 
                     "utter_index": 1296
                 }, 
                 {
@@ -8938,7 +8938,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -9096,7 +9096,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "\u6709\u3002", 
@@ -9351,7 +9351,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4e03\u5341\u56db\u5757\u3002", 
+                    "semantic_tagged": "<fee cat=\"SERVICES\">\u4e03\u5341\u56db</fee>\u5757\u3002", 
                     "utter_index": 1350
                 }, 
                 {
@@ -9406,7 +9406,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -9430,7 +9430,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -9550,7 +9550,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -9802,7 +9802,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -9994,7 +9994,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -10071,7 +10071,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u6211\u4eec\u65b0\u52a0\u5761\u90a3\u4e2a\u673a\u573a\u554a\uff0c", 
+                    "semantic_tagged": "%\u5443\uff0c<area cat=\"CITY\">\u6211\u4eec</area>\u65b0\u52a0\u5761\u90a3\u4e2a\u673a\u573a\u554a\uff0c", 
                     "utter_index": 1455
                 }, 
                 {
@@ -10186,7 +10186,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -10251,7 +10251,7 @@
                             "act": "QST"
                         }
                     ], 
-                    "semantic_tagged": "\u5728\u65b0\u52a0\u5761\u554a-", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u5728</area>\u65b0\u52a0\u5761\u554a-", 
                     "utter_index": 1481
                 }, 
                 {
@@ -10486,7 +10486,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "ACK"
                             ], 
                             "act": "FOL"
                         }
@@ -10503,7 +10503,7 @@
                             "act": "RES"
                         }
                     ], 
-                    "semantic_tagged": "%\u554a\u5bf9\uff0c\u8fd9\u4e2a\u5176\u4e2d\u4e00\u4e2a\u5546\u573a\u3002", 
+                    "semantic_tagged": "%\u554a\u5bf9\uff0c<loc cat=\"ATTRACTION\">\u8fd9\u4e2a</loc>\u5176\u4e2d\u4e00\u4e2a\u5546\u573a\u3002", 
                     "utter_index": 1514
                 }, 
                 {
@@ -10575,7 +10575,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u54e6\uff0c\u8fd9\u4e2a\u662f\u4e4c\u8282\u8def\u7684\u4eba\u884c\u8d70\u9053\u3002", 
+                    "semantic_tagged": "%\u54e6\uff0c\u8fd9\u4e2a<loc cat=\"ATTRACTION\">\u662f</loc>\u4e4c\u8282\u8def\u7684\u4eba\u884c\u8d70\u9053\u3002", 
                     "utter_index": 1522
                 }, 
                 {
@@ -10798,7 +10798,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -10954,7 +10954,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11230,7 +11230,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11247,14 +11247,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u505a\u8fd9\u4e2a\u5a18\u60f9\u83dc\u7684\uff0c", 
+                    "semantic_tagged": "\u505a<food cat=\"MAIN\">\u8fd9\u4e2a</food>\u5a18\u60f9\u83dc\u7684\uff0c", 
                     "utter_index": 1606
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11302,7 +11302,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11530,9 +11530,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\u8ba2\u597d\u65e5\u671f\uff0c\u8ba2\u597d\u673a\u7968-", 
@@ -11655,7 +11655,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "OPENING"
                             ], 
                             "act": "FOL"
                         }
@@ -11667,7 +11667,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11703,7 +11703,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11715,7 +11715,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -11756,7 +11756,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4e0b\u5468\u7684\u8bdd-", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u4e0b</area>\u5468\u7684\u8bdd-", 
                     "utter_index": 18
                 }, 
                 {
@@ -11825,10 +11825,10 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
-                    "semantic_tagged": "\u662f\uff0c\u65b0\u52a0\u5761\u554a\u3002", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u662f</area>\uff0c\u65b0\u52a0\u5761\u554a\u3002", 
                     "utter_index": 29
                 }, 
                 {
@@ -11900,7 +11900,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u592a\u70ed\u3002\u73b0\u5728\u5927\u6982%\u5443\u8fd9\u51e0\u5929\u554a\uff0c", 
+                    "semantic_tagged": "\u592a\u70ed\u3002<time cat=\"INTERVAL\">\u73b0\u5728</time>\u5927\u6982%\u5443\u8fd9\u51e0\u5929\u554a\uff0c", 
                     "utter_index": 42
                 }, 
                 {
@@ -12027,7 +12027,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -12296,7 +12296,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u4f4f\u5728\u5723\u6dd8\u6c99\u5c9b\u3002", 
+                    "semantic_tagged": "%\u5443\uff0c<loc cat=\"ATTRACTION\">\u4f4f</loc>\u5728\u5723\u6dd8\u6c99\u5c9b\u3002", 
                     "utter_index": 99
                 }, 
                 {
@@ -12327,7 +12327,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -12363,7 +12363,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -12572,7 +12572,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u8fd9\u4e2a\u662f\u5e73\u5747\u4ef7\u3002", 
+                    "semantic_tagged": "%\u5443\uff0c<loc cat=\"ATTRACTION\">\u8fd9\u4e2a</loc>\u662f\u5e73\u5747\u4ef7\u3002", 
                     "utter_index": 128
                 }, 
                 {
@@ -12699,7 +12699,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "HOW_MUCH"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -12723,9 +12723,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\uff0c\u8fd8\u6709\u8fd9\u4e2a%\u5443\uff0c\u53e6\u5916\u4e00\u95f4\u53eb\u4ec0\u4e48\u554a\uff1f", 
@@ -12848,14 +12848,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u90a3\u4e2a\u5ea6\u5047\u9152\u5e97\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u90a3\u4e2a</loc>\u5ea6\u5047\u9152\u5e97\u3002", 
                     "utter_index": 158
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -12872,7 +12872,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u7136\u540e\u5462\uff0c%\u5443\u4f60\u770b\uff0c%\u5443\uff0c\u8fd9\u4e2a\u5c31\u662f-\u8fd9-Capella Hotel %\u5566\u3002", 
+                    "semantic_tagged": "\u7136\u540e\u5462\uff0c%\u5443<time cat=\"INTERVAL\">\u4f60</time>\u770b\uff0c%\u5443\uff0c\u8fd9\u4e2a\u5c31\u662f-\u8fd9-Capella Hotel %\u5566\u3002", 
                     "utter_index": 161
                 }, 
                 {
@@ -12956,7 +12956,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6211\u4eec\u5723\u6dd8\u6c99\u554a\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u6211\u4eec</loc>\u5723\u6dd8\u6c99\u554a\uff0c", 
                     "utter_index": 177
                 }, 
                 {
@@ -13016,7 +13016,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u516d\u95f4\u9152\u5e97\u3002", 
+                    "semantic_tagged": "\u516d<loc cat=\"ATTRACTION\">\u95f4</loc>\u9152\u5e97\u3002", 
                     "utter_index": 183
                 }, 
                 {
@@ -13028,7 +13028,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6709\u8fd9\u4e2a\u8d4c\u573a\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u6709</loc>\u8fd9\u4e2a\u8d4c\u573a\uff0c", 
                     "utter_index": 184
                 }, 
                 {
@@ -13040,7 +13040,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6709\u8fd9\u4e2a\uff0c\u73af\u7403\u5f71\u57ce\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u6709</loc>\u8fd9\u4e2a\uff0c\u73af\u7403\u5f71\u57ce\uff0c", 
                     "utter_index": 185
                 }, 
                 {
@@ -13136,7 +13136,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5c31\u53ef\u4ee5-%\u5443\u5c31%\u5443\u73a9\u4e00\u5929\u3002", 
+                    "semantic_tagged": "\u5c31\u53ef\u4ee5-%<time cat=\"INTERVAL\">\u5443</time>\u5c31%\u5443\u73a9\u4e00\u5929\u3002", 
                     "utter_index": 195
                 }, 
                 {
@@ -13148,7 +13148,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u54e6\uff0c\u4e00\u6574\u5929%\u5566\u3002", 
+                    "semantic_tagged": "%\u54e6\uff0c<time cat=\"INTERVAL\">\u4e00\u6574\u5929</time>%\u5566\u3002", 
                     "utter_index": 196
                 }, 
                 {
@@ -13299,9 +13299,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\u6240-\u6ca1\u6709%\u5443\u7279\u522b\u5fcc\u8bb3\u4ec0\u4e48\u4e1c\u897f\u54e6\u3002", 
@@ -13340,7 +13340,7 @@
                             "act": "QST"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u90a3\u4e2a%\u5443\u73af\u7403\u5f71\u57ce\u7684\u56fe\u7247\u6709\u5417\uff1f", 
+                    "semantic_tagged": "%\u5443\u90a3\u4e2a%\u5443\u73af\u7403\u5f71\u57ce\u7684\u56fe\u7247\u6709<loc cat=\"ATTRACTION\">\u5417</loc>\uff1f", 
                     "utter_index": 219
                 }, 
                 {
@@ -13647,12 +13647,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "HOW_MUCH"
                             ], 
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u662f\u4e00\u4e2a\u534a\u5c0f\u65f6\u7684\u4e00\u4e2a\u73b0\u573a-", 
+                    "semantic_tagged": "%\u5443\u662f\u4e00\u4e2a\u534a\u5c0f\u65f6<area cat=\"CITY\">\u7684</area>\u4e00\u4e2a\u73b0\u573a-", 
                     "utter_index": 258
                 }, 
                 {
@@ -14019,9 +14019,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "EXPLAIN"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\uff0c\u8fd9\u662f\u8bf4\uff0c\u53ef\u80fd\u642d%\u5443-", 
@@ -14345,7 +14345,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "\u662f%\u5443\uff0c", 
@@ -14475,7 +14475,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -14535,7 +14535,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "HOW_MUCH"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -14612,7 +14612,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u65b0\u52a0\u5761%\u5443\u8ddf\u9a6c\u6765\u897f\u4e9a\u8ddf\u5370\u5ea6\u5c3c\u897f\u4e9a\uff0c", 
+                    "semantic_tagged": "%\u5443\u65b0\u52a0\u5761%<area cat=\"CITY\">\u5443</area>\u8ddf\u9a6c\u6765\u897f\u4e9a\u8ddf\u5370\u5ea6\u5c3c\u897f\u4e9a\uff0c", 
                     "utter_index": 380
                 }, 
                 {
@@ -14780,7 +14780,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6bd4\u8f83\u9760\u8fd1\u65b0\u52a0\u5761\u7684\u90a3\u4e2a\u5c0f\u5c9b\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u6bd4\u8f83</loc>\u9760\u8fd1\u65b0\u52a0\u5761\u7684\u90a3\u4e2a\u5c0f\u5c9b\u3002", 
                     "utter_index": 394
                 }, 
                 {
@@ -14823,7 +14823,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -14912,14 +14912,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u518d\u4ece\u65b0\u52a0\u5761\uff0c", 
+                    "semantic_tagged": "%\u5443<area cat=\"CITY\">\u518d</area>\u4ece\u65b0\u52a0\u5761\uff0c", 
                     "utter_index": 410
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15015,7 +15015,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15039,7 +15039,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -15063,7 +15063,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15123,7 +15123,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -15171,7 +15171,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15272,7 +15272,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u65b0\u52a0\u5761\uff0c\u533a%\u5475\uff0c", 
+                    "semantic_tagged": "\u65b0\u52a0\u5761\uff0c<area cat=\"CITY\">\u533a</area>%\u5475\uff0c", 
                     "utter_index": 463
                 }, 
                 {
@@ -15305,7 +15305,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "\u6709\uff0c%\u554a\u3002", 
@@ -15399,7 +15399,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -15651,7 +15651,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15728,7 +15728,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u5723\u6dd8\u6c99\u5c9b\u4e0a\u9762%\u5475\uff0c", 
+                    "semantic_tagged": "%\u5443\u5723\u6dd8\u6c99\u5c9b<loc cat=\"ATTRACTION\">\u4e0a\u9762</loc>%\u5475\uff0c", 
                     "utter_index": 516
                 }, 
                 {
@@ -15776,7 +15776,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u5723\u6dd8\u6c99\u5c9b\u5750\u5230\u5916\u9762\u7684\u90a3\u4e2a\u5546\u573a\u3002", 
+                    "semantic_tagged": "%<loc cat=\"ATTRACTION\">\u5443</loc>\u5723\u6dd8\u6c99\u5c9b\u5750\u5230\u5916\u9762\u7684\u90a3\u4e2a\u5546\u573a\u3002", 
                     "utter_index": 522
                 }, 
                 {
@@ -15800,7 +15800,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5b83\u672c\u5c9b\u4e0a-", 
+                    "semantic_tagged": "\u5b83\u672c\u5c9b<loc cat=\"ATTRACTION\">\u4e0a</loc>-", 
                     "utter_index": 524
                 }, 
                 {
@@ -15867,7 +15867,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -15896,7 +15896,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5c31\u662f\u5730\u94c1\u7ad9\u5566\uff01", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u5c31</loc>\u662f\u5730\u94c1\u7ad9\u5566\uff01", 
                     "utter_index": 533
                 }, 
                 {
@@ -15908,7 +15908,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4f60\u5c31\u53ef\u4ee5\u505a\u5730\u94c1\uff0c", 
+                    "semantic_tagged": "\u4f60\u5c31<trsp cat=\"TYPE\">\u53ef\u4ee5</trsp>\u505a\u5730\u94c1\uff0c", 
                     "utter_index": 534
                 }, 
                 {
@@ -15944,7 +15944,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u65c5\u6e38\u666f\u70b9\u554a\uff0c\u6216\u8005\u5230%\u5443\u90a3\u4e2a\u5e02\u533a\u4e2d\u5fc3\u554a\uff0c\u6216\u8005\u5546\u4e1a\u8857\uff0c\u4e4c\u8282\u8def\u53bb\u3002", 
+                    "semantic_tagged": "\u65c5\u6e38\u666f\u70b9\u554a\uff0c\u6216\u8005\u5230%\u5443<loc cat=\"ATTRACTION\">\u90a3\u4e2a</loc>\u5e02\u533a\u4e2d\u5fc3\u554a\uff0c\u6216\u8005\u5546\u4e1a\u8857\uff0c\u4e4c\u8282\u8def\u53bb\u3002", 
                     "utter_index": 537
                 }, 
                 {
@@ -16023,9 +16023,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\uff0c\u6211-%\u554a\u5f88\u597d\u3002", 
@@ -16100,14 +16100,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u5750\u5730\u94c1\uff0c", 
+                    "semantic_tagged": "%\u5443<trsp cat=\"TYPE\">\u5750</trsp>\u5730\u94c1\uff0c", 
                     "utter_index": 555
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "EXPLAIN"
                             ], 
                             "act": "FOL"
                         }
@@ -16119,9 +16119,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "EXPLAIN"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\uff0c\u5750\u4e09\u4e2a-", 
@@ -16143,9 +16143,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "QST"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\uff0c\u4e00\u4e2a-", 
@@ -16184,7 +16184,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u90a3\u4e2a\u7ad9\u53eb\u514b\u62c9\u7801\u5934\u7ad9\u3002", 
+                    "semantic_tagged": "\u90a3\u4e2a<loc cat=\"ATTRACTION\">\u7ad9</loc>\u53eb\u514b\u62c9\u7801\u5934\u7ad9\u3002", 
                     "utter_index": 562
                 }, 
                 {
@@ -16244,7 +16244,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u8fd9\u4e2a\u5c31\u662f\u65b0\u52a0\u5761\uff0c", 
+                    "semantic_tagged": "\u8fd9\u4e2a<area cat=\"CITY\">\u5c31\u662f</area>\u65b0\u52a0\u5761\uff0c", 
                     "utter_index": 570
                 }, 
                 {
@@ -16280,7 +16280,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5b83\u662f\u6cbf\u7740\u65b0\u52a0\u5761\u6cb3\uff0c", 
+                    "semantic_tagged": "\u5b83<loc cat=\"ATTRACTION\">\u662f</loc><area cat=\"CITY\">\u6cbf\u7740</area>\u65b0\u52a0\u5761\u6cb3\uff0c", 
                     "utter_index": 574
                 }, 
                 {
@@ -16335,7 +16335,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -16364,7 +16364,7 @@
                             "act": "RES"
                         }
                     ], 
-                    "semantic_tagged": "\u53ef\u4ee5%\u5443\u5750\u8239\u6e38\u8fd9\u4e2a\u65b0\u52a0\u5761\u6cb3\u3002", 
+                    "semantic_tagged": "\u53ef\u4ee5%<loc cat=\"ATTRACTION\">\u5443</loc>\u5750\u8239\u6e38\u8fd9\u4e2a\u65b0\u52a0\u5761\u6cb3\u3002", 
                     "utter_index": 585
                 }, 
                 {
@@ -16400,7 +16400,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u770b\u65b0\u52a0\u5761\u7684%\u5443\u591c\u8272\uff0c", 
+                    "semantic_tagged": "\u770b\u65b0\u52a0\u5761<area cat=\"CITY\">\u7684</area>%\u5443\u591c\u8272\uff0c", 
                     "utter_index": 589
                 }, 
                 {
@@ -16472,7 +16472,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5927\u6982\u5566\u54e6\uff0c\u662f\u4e24\u4e2a\u661f\u671f\u561b\uff0c\u5341\u56db\u5929\u3002", 
+                    "semantic_tagged": "\u5927\u6982\u5566<time cat=\"INTERVAL\">\u54e6</time>\uff0c\u662f\u4e24\u4e2a\u661f\u671f\u561b\uff0c\u5341\u56db\u5929\u3002", 
                     "utter_index": 600
                 }, 
                 {
@@ -16484,7 +16484,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u54e6\uff0c\u65c5\u6e38\u7b7e\u8bc1\u662f\u5341\u56db\u5929\u3002", 
+                    "semantic_tagged": "%\u54e6\uff0c\u65c5\u6e38\u7b7e\u8bc1<time cat=\"INTERVAL\">\u662f</time>\u5341\u56db\u5929\u3002", 
                     "utter_index": 601
                 }, 
                 {
@@ -16517,7 +16517,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "QST"
                         }
                     ], 
                     "semantic_tagged": "\u662f\uff0c%\u5443\u7559\u4e0b\u6765\u7ee7\u7eed\u65c5\u6e38\u5462\uff1f\u8fd8\u662f\u4ec0\u4e48\uff1f", 
@@ -16647,9 +16647,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\uff0c\u6211-%\u5509\u6211\u60f3\u4ecb\u7ecd\u4f60\u53e6\u5916\u4e00\u4e2a\u554a\u3002", 
@@ -16695,7 +16695,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -16743,9 +16743,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u5443\u662f%\u5443\u7f8e\u56fd\u62c9\u65af\u7ef4\u52a0\u65af\u96c6\u56e2\uff0c", 
@@ -16755,7 +16755,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -16899,7 +16899,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17043,7 +17043,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17055,7 +17055,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17079,7 +17079,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17288,7 +17288,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u9910\u5385\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u9910\u5385</loc>\u3002", 
                     "utter_index": 691
                 }, 
                 {
@@ -17312,7 +17312,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u65b0\u52a0\u5761%\u5443\u5b83\u90a3\u4e2a\u9910\u5385\u554a\uff0c", 
+                    "semantic_tagged": "\u65b0\u52a0\u5761%\u5443\u5b83<area cat=\"CITY\">\u90a3\u4e2a</area>\u9910\u5385\u554a\uff0c", 
                     "utter_index": 695
                 }, 
                 {
@@ -17360,7 +17360,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u975e\u5e38\u9ad8\u6863\u4e00\u4e2a\u9910\u5385\u3002", 
+                    "semantic_tagged": "%\u5443\uff0c\u975e\u5e38\u9ad8\u6863<loc cat=\"ATTRACTION\">\u4e00\u4e2a</loc>\u9910\u5385\u3002", 
                     "utter_index": 699
                 }, 
                 {
@@ -17408,7 +17408,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u8981\u4e00\u4e24\u4e2a\u6708\u540e\uff0c\u624d\u80fd\u627e\u5230\u4f4d\u5b50\u3002", 
+                    "semantic_tagged": "\u8981\u4e00\u4e24\u4e2a\u6708<time cat=\"INTERVAL\">\u540e</time>\uff0c\u624d\u80fd<time cat=\"INTERVAL\">\u627e\u5230</time>\u4f4d\u5b50\u3002", 
                     "utter_index": 703
                 }, 
                 {
@@ -17499,7 +17499,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17624,7 +17624,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u7136\u540e\uff0c\u4f60%\u5443\u53ef\u80fd\u4e24\u5929\u4f4f\u5728\u5723\u6dd8\u6c99\uff0c", 
+                    "semantic_tagged": "\u7136\u540e\uff0c\u4f60%\u5443\u53ef\u80fd\u4e24\u5929<time cat=\"INTERVAL\">\u4f4f</time>\u5728\u5723\u6dd8\u6c99\uff0c", 
                     "utter_index": 733
                 }, 
                 {
@@ -17636,14 +17636,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u554a\u53e6\u5916\u4e24\u5929%\u554a\uff0c\u4f4f\u5728\u8fd9\u4e2a\u91d1\u6c99\u9152\u5e97\u4e5f\u884c\u3002", 
+                    "semantic_tagged": "%\u554a\u53e6\u5916<loc cat=\"HOTEL\">\u4e24</loc>\u5929%\u554a\uff0c\u4f4f\u5728\u8fd9\u4e2a\u91d1\u6c99\u9152\u5e97\u4e5f\u884c\u3002", 
                     "utter_index": 734
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17739,7 +17739,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17787,7 +17787,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17871,7 +17871,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -17936,7 +17936,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6211\u63a8\u8350\u4f60\u53bb\u770b\u770b\u6211\u4eec\u65b0\u52a0\u5761\u7684\u8fd9\u4e2a%\u5443\u5c0f\u5370\u5ea6\u3002", 
+                    "semantic_tagged": "\u6211\u63a8\u8350\u4f60<loc cat=\"CULTURAL\">\u53bb</loc>\u770b\u770b\u6211\u4eec\u65b0\u52a0\u5761\u7684\u8fd9\u4e2a%\u5443\u5c0f\u5370\u5ea6\u3002", 
                     "utter_index": 787
                 }, 
                 {
@@ -17991,7 +17991,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -18039,7 +18039,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "HOW_MUCH"
                             ], 
                             "act": "FOL"
                         }
@@ -18092,7 +18092,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u6b96\u6c11\u65b0\u52a0\u5761\u7684\u65f6\u5019\u5462\uff0c", 
+                    "semantic_tagged": "%\u5443\uff0c\u6b96\u6c11\u65b0\u52a0\u5761\u7684<area cat=\"CITY\">\u65f6\u5019</area>\u5462\uff0c", 
                     "utter_index": 802
                 }, 
                 {
@@ -18495,12 +18495,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u53bb\u90a3\u8fb9%\u554a\uff0c\u53ef\u4ee5\u53c2\u89c2\u5370\u5ea6\u5e99\u3002", 
+                    "semantic_tagged": "%\u5443<loc cat=\"ATTRACTION\">\u53bb</loc>\u90a3\u8fb9%\u554a\uff0c\u53ef\u4ee5\u53c2\u89c2\u5370\u5ea6\u5e99\u3002", 
                     "utter_index": 837
                 }, 
                 {
@@ -18512,7 +18512,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u53ef\u4ee5\u770b\u5230-\u53c2\u89c2\u5370\u5ea6\u5e99\uff0c", 
+                    "semantic_tagged": "\u53ef\u4ee5<loc cat=\"ATTRACTION\">\u770b\u5230</loc>-\u53c2\u89c2\u5370\u5ea6\u5e99\uff0c", 
                     "utter_index": 838
                 }, 
                 {
@@ -18867,7 +18867,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -18891,7 +18891,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "EXPLAIN"
                             ], 
                             "act": "FOL"
                         }
@@ -19071,7 +19071,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -19155,7 +19155,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -19791,7 +19791,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "OPENING"
                             ], 
                             "act": "FOL"
                         }
@@ -19815,7 +19815,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -19911,7 +19911,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -19995,7 +19995,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20007,7 +20007,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20033,7 +20033,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "%\u554a\uff0c\u5bf9\uff0c%\u554a\u3002", 
@@ -20048,7 +20048,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u8fd9\u4e2a\u5c31\u662f\u5c0f\u5370\u5ea6\u7684\u4e00\u90e8\u5206\u3002", 
+                    "semantic_tagged": "%\u5443\u8fd9\u4e2a<area cat=\"CITY\">\u5c31\u662f</area>\u5c0f\u5370\u5ea6\u7684\u4e00\u90e8\u5206\u3002", 
                     "utter_index": 992
                 }, 
                 {
@@ -20103,7 +20103,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20247,7 +20247,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "OPENING"
                             ], 
                             "act": "FOL"
                         }
@@ -20261,7 +20261,7 @@
                             "attributes": [
                                 "CONFIRM"
                             ], 
-                            "act": "FOL"
+                            "act": "RES"
                         }
                     ], 
                     "semantic_tagged": "\u6709\u3002", 
@@ -20319,7 +20319,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20547,7 +20547,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20703,7 +20703,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20727,7 +20727,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "EXPLAIN"
                             ], 
                             "act": "FOL"
                         }
@@ -20744,7 +20744,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u9c7c\u5c3e\u72ee\u516c\u56ed\u561b\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u9c7c\u5c3e\u72ee</loc>\u516c\u56ed\u561b\u3002", 
                     "utter_index": 1067
                 }, 
                 {
@@ -20871,7 +20871,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -20948,7 +20948,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5c0f\u6e14\u6751\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u5c0f</loc>\u6e14\u6751\u3002", 
                     "utter_index": 1089
                 }, 
                 {
@@ -20991,7 +20991,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21003,12 +21003,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u55ef\uff0c\u6211\u4eec\u53eb\u6d77\u4eba\uff0c", 
+                    "semantic_tagged": "%\u55ef\uff0c<loc cat=\"ATTRACTION\">\u6211\u4eec</loc>\u53eb\u6d77\u4eba\uff0c", 
                     "utter_index": 1094
                 }, 
                 {
@@ -21128,7 +21128,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u90a3\u4e2a\u5c0f\u5c9b\u5c31\u662f\u65b0\u52a0\u5761\u5566\u3002", 
+                    "semantic_tagged": "\u90a3\u4e2a\u5c0f\u5c9b\u5c31<area cat=\"CITY\">\u662f</area>\u65b0\u52a0\u5761\u5566\u3002", 
                     "utter_index": 1105
                 }, 
                 {
@@ -21147,9 +21147,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "\u5c31\u8d70\u554a\uff0c\u770b\u5230\u4e00\u5934\u52a8\u7269\u3002", 
@@ -21219,7 +21219,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21380,7 +21380,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u55ef\u5c31\u8bbe\u8ba1\u4e86\u4e00\u4e2a%\u5443\u4ee3\u8868\u65b0\u52a0\u5761\u7684\u6807\u5fd7\u3002", 
+                    "semantic_tagged": "%\u55ef\u5c31\u8bbe\u8ba1\u4e86\u4e00\u4e2a%\u5443\u4ee3\u8868\u65b0\u52a0\u5761\u7684<area cat=\"CITY\">\u6807\u5fd7</area>\u3002", 
                     "utter_index": 1127
                 }, 
                 {
@@ -21471,7 +21471,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21536,14 +21536,14 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6240\u4ee5\u8fd9\u4e2a\u5c31\u662f\u65b0\u52a0\u5761\u7684\u6807\u5fd7\u4e86\uff0c\u4e5f\u4ee3\u8868\u4e86\u65b0\u52a0\u5761\u7684\u5386\u53f2\u7684\u4e00\u90e8\u5206\u3002", 
+                    "semantic_tagged": "\u6240\u4ee5\u8fd9\u4e2a<area cat=\"CITY\">\u5c31\u662f</area>\u65b0\u52a0\u5761\u7684\u6807\u5fd7\u4e86\uff0c\u4e5f\u4ee3\u8868\u4e86\u65b0\u52a0\u5761\u7684\u5386\u53f2\u7684\u4e00\u90e8\u5206\u3002", 
                     "utter_index": 1140
                 }, 
                 {
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21603,7 +21603,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21615,7 +21615,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21656,7 +21656,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4e09\u5e74\u534a\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u4e09</loc>\u5e74\u534a\u3002", 
                     "utter_index": 1151
                 }, 
                 {
@@ -21776,7 +21776,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5728\u8fd9\u4e2a-\u6211\u4eec\u7684\u9c7c\u5c3e\u72ee\u516c\u56ed\uff0c", 
+                    "semantic_tagged": "\u5728\u8fd9\u4e2a-\u6211\u4eec<loc cat=\"ATTRACTION\">\u7684</loc>\u9c7c\u5c3e\u72ee\u516c\u56ed\uff0c", 
                     "utter_index": 1161
                 }, 
                 {
@@ -21879,7 +21879,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "HOW_MUCH"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -21944,7 +21944,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4e00\u5934\u5c31\u662f\u521a\u624d\u7684\u9c7c\u5c3e\u72ee\u516c\u56ed\uff0c", 
+                    "semantic_tagged": "\u4e00\u5934\u5c31<loc cat=\"ATTRACTION\">\u662f</loc>\u521a\u624d\u7684\u9c7c\u5c3e\u72ee\u516c\u56ed\uff0c", 
                     "utter_index": 1182
                 }, 
                 {
@@ -22112,7 +22112,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5c31\u5728\u5723\u6dd8\u6c99\u5c9b\u3002", 
+                    "semantic_tagged": "\u5c31<loc cat=\"ATTRACTION\">\u5728</loc>\u5723\u6dd8\u6c99\u5c9b\u3002", 
                     "utter_index": 1199
                 }, 
                 {
@@ -22148,7 +22148,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u9152\u5e97\u554a\u3002", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u9152\u5e97</loc>\u554a\u3002", 
                     "utter_index": 1202
                 }, 
                 {
@@ -22160,7 +22160,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u5982\u6b65\u884c\u7684\u8bdd\uff0c\u5927\u6982\u5341\u5206\u949f\u5c31\u53ef\u4ee5\u770b\u5230\u90a3\u4e2a\u9c7c\u5c3e\u72ee\u4e86\u3002", 
+                    "semantic_tagged": "%\u5443\u5982\u6b65\u884c\u7684\u8bdd\uff0c\u5927\u6982\u5341\u5206\u949f<time cat=\"INTERVAL\">\u5c31</time>\u53ef\u4ee5\u770b\u5230\u90a3\u4e2a\u9c7c\u5c3e\u72ee\u4e86\u3002", 
                     "utter_index": 1203
                 }, 
                 {
@@ -22359,7 +22359,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -22371,7 +22371,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -22484,7 +22484,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5370\u5ea6\u548c\u5176\u4ed6\u3002", 
+                    "semantic_tagged": "\u5370\u5ea6\u548c<area cat=\"CITY\">\u5176\u4ed6</area>\u3002", 
                     "utter_index": 1236
                 }, 
                 {
@@ -22515,7 +22515,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -22532,7 +22532,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u4ece\u9c7c\u5c3e\u72ee\u516c\u56ed\u5475\uff0c", 
+                    "semantic_tagged": "<loc cat=\"ATTRACTION\">\u4ece</loc>\u9c7c\u5c3e\u72ee\u516c\u56ed\u5475\uff0c", 
                     "utter_index": 1246
                 }, 
                 {
@@ -22568,7 +22568,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5341\u5206\u949f\u3002", 
+                    "semantic_tagged": "<time cat=\"INTERVAL\">\u5341</time>\u5206\u949f\u3002", 
                     "utter_index": 1250
                 }, 
                 {
@@ -22616,7 +22616,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u6211\u4eec\u65b0\u52a0\u5761%\u554a\uff0c", 
+                    "semantic_tagged": "<area cat=\"CITY\">\u6211\u4eec</area>\u65b0\u52a0\u5761%\u554a\uff0c", 
                     "utter_index": 1259
                 }, 
                 {
@@ -22671,7 +22671,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -22748,7 +22748,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\uff0c\u5230\u6211\u4eec\u7684\u90a3\u4e2a\u725b\u8f66\u6c34\u3002", 
+                    "semantic_tagged": "%\u5443\uff0c<loc cat=\"CULTURAL\">\u5230</loc>\u6211\u4eec\u7684\u90a3\u4e2a\u725b\u8f66\u6c34\u3002", 
                     "utter_index": 1270
                 }, 
                 {
@@ -22820,7 +22820,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5728\u725b\u8f66\u6c34\uff0c", 
+                    "semantic_tagged": "<loc cat=\"CULTURAL\">\u5728</loc>\u725b\u8f66\u6c34\uff0c", 
                     "utter_index": 1276
                 }, 
                 {
@@ -22911,9 +22911,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "\u5728\u6625\u8282\u7684\u65f6\u5019\u554a\uff0c", 
@@ -22971,7 +22971,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "ACK"
                             ], 
                             "act": "FOL"
                         }
@@ -23019,7 +23019,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -23163,7 +23163,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -23271,7 +23271,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -23432,7 +23432,7 @@
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "%\u5443\u90a3\u4e2a\u4e0a-\u4e0b\u9762\u662f\u5b83\u7684\u6c64\u6c41\uff0c", 
+                    "semantic_tagged": "%\u5443\u90a3\u4e2a\u4e0a-\u4e0b\u9762<loc cat=\"ATTRACTION\">\u662f</loc>\u5b83\u7684\u6c64\u6c41\uff0c", 
                     "utter_index": 1336
                 }, 
                 {
@@ -23655,12 +23655,12 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
                     ], 
-                    "semantic_tagged": "\u5c31\uff0c%\u5443\u5728\u83dc\u5e02\u573a%\u554a\uff0c", 
+                    "semantic_tagged": "\u5c31\uff0c%\u5443\u5728\u83dc\u5e02\u573a%<time cat=\"INTERVAL\">\u554a</time>\uff0c", 
                     "utter_index": 1357
                 }, 
                 {
@@ -23907,7 +23907,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "INFO"
+                                "CONFIRM"
                             ], 
                             "act": "FOL"
                         }
@@ -23943,7 +23943,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -24267,7 +24267,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -24471,9 +24471,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u54e6\uff0c\u597d\u662f%\u5443\u662f\u3002", 
@@ -24519,7 +24519,7 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "ACK"
+                                "INFO"
                             ], 
                             "act": "FOL"
                         }
@@ -24531,9 +24531,9 @@
                     "speech_act": [
                         {
                             "attributes": [
-                                "CONFIRM"
+                                "INFO"
                             ], 
-                            "act": "RES"
+                            "act": "FOL"
                         }
                     ], 
                     "semantic_tagged": "%\u54e6\u597d\u597d\uff0c\u518d\u89c1%\u554a\u3002", 

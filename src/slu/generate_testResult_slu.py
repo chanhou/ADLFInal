@@ -41,7 +41,7 @@ class DirectLabelProjection:
         cn_word_id_map = self.__get_char_word_map(cn_utter, [word for word, _ in align])
         en_word_id_map = self.__get_char_word_map(en_translated, en_translated.split())
         
-        en_tagged_unit_id_map = self.__get_char_word_map(en_translated.lower(), [word for word in en_tagged])
+        en_tagged_unit_id_map = self.__get_char_word_map(en_translated.lower(), [word for word,_ in en_tagged])
 
         result = {}
 
@@ -156,7 +156,10 @@ def main(argv):
                 if len(translations['translated']) > 0:
                     top_hyp = translations['translated'][0]['hyp']
                     pred_act = intent.readline()[:-1]
-                    pred_semantic = slot.readline()[:-1].split(' ')
+                    pred_semantic_tmp = slot.readline()[:-1].split(' ')
+                    pred_semantic = []
+                    for hhh, sss in zip(top_hyp, pred_semantic_tmp):
+                        pred_semantic.append((hhh,sss))
                     #pred_act, pred_semantic = slu.pred(top_hyp)
 
                     combined_act = {}
