@@ -24,6 +24,8 @@ import multi_task_model
 import subprocess
 import stat
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 #tf.app.flags.DEFINE_float("learning_rate", 0.1, "Learning rate.")
 #tf.app.flags.DEFINE_float("learning_rate_decay_factor", 0.9,
@@ -58,7 +60,7 @@ tf.app.flags.DEFINE_boolean("bidirectional_rnn", True,
 tf.app.flags.DEFINE_string("task", None, "Options: joint; intent; tagging")
 FLAGS = tf.app.flags.FLAGS
 
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.15)
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
     
 if FLAGS.max_sequence_length == 0:
     print ('Please indicate max sequence length. Exit')
@@ -320,7 +322,7 @@ def train():
         sys.stdout.flush()
         # Save checkpoint and zero timer and loss.
         checkpoint_path = os.path.join(FLAGS.train_dir, "model.ckpt")
-        model.saver.save(sess, checkpoint_path, global_step=model.global_step, max_to_keep=1000)
+        model.saver.save(sess, checkpoint_path, global_step=model.global_step)
         step_time, loss = 0.0, 0.0 
         
         def run_valid_test(data_set, mode): # mode: Eval, Test
@@ -398,7 +400,8 @@ def train():
                 w.write(intt+'\n')
         with open('./model_tmp/test_output/tagging.txt.'+str(count_),'w')as w:
             for ind in range(len(tagging_list)):
-                w.write('O '+' '.join(tagging_list[ind])+'\n')
+                w.write(' '.join(tagging_list[ind])+'\n')
+        
         count_ += 1
           
 def main(_):

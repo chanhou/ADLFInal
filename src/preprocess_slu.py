@@ -10,7 +10,7 @@ import argparse, dataset_walker, time, json
 from semantic_tag_parser import SemanticTagParser
 import re
 
-targetF = 'valid'
+targetF = 'train'
 testF = 'dev' # test
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
@@ -142,7 +142,9 @@ for call in testset:
         if (log_utter['speaker'] == 'Guide'):
             if len(translations['translated']) > 0:
                 top_hyp = translations['translated'][0]['hyp']
-                ftest.write(top_hyp+'\n')
+                tokenized = __tokenize(top_hyp)
+                word_feats = ' '.join([word.lower() for word, _ in tokenized])
+                ftest.write(word_feats+'\n')
 
 ftest.close()
 #if __name__ == "__main__":
