@@ -17,4 +17,5 @@ check:
 
 score:
 	python ../dstc5/scripts/score_slu.py --dataset dstc5_$(test) --dataroot ../../data_for_stu/$(test) --ontology ../dstc5/scripts/config/ontology_dstc5.json --jsonfile result/slu_$(test)$(num).json --roletype GUIDE --scorefile result/slu.score$(num).csv
-	cat ./result/slu.score$(num).csv 
+	#cat ./result/slu.score$(num).csv 
+	python report_slu.py result/slu.score$(num).csv
