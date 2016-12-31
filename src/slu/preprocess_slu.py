@@ -14,7 +14,7 @@ import re
 # which data set to chooce
 ####
 targetF = 'valid' # train, valid
-testF = 'dev' # dev, test_slu
+testF = 'test_slu' # dev, test_slu
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
