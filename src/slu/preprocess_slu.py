@@ -10,8 +10,11 @@ import argparse, dataset_walker, time, json
 from semantic_tag_parser import SemanticTagParser
 import re
 
-targetF = 'train'
-testF = 'test_slu' # dev, testslu
+#####
+# which data set to chooce
+####
+targetF = 'train' # train, valid
+testF = 'test_slu' # dev, test_slu
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
@@ -19,6 +22,9 @@ flabel = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.label','w')
 flabel2 = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.label2','w')
 
 
+####
+# original function provided by baseline_slu.py
+####
 def add_instance(utter, speech_act, semantic_tagged):
     tokenized = __tokenize(utter, semantic_tagged)
     if tokenized is None:
@@ -36,12 +42,11 @@ def add_instance(utter, speech_act, semantic_tagged):
                 if attr == 'cat':
                     cat = val
             sem_label = '%s-%s_%s' % (bio, tag, cat)
-        #semantic_instance.append((unicode(word.lower()), unicode(sem_label)))
-        #### edit
+        ####
+        # get what we want into list
+        ####
         original_sent.append(unicode(word.lower()))
         IOB_tag.append(unicode(sem_label))
-
-    #self.__semantic_instance_list.append(semantic_instance)
 
     sa_label_list = []
     for sa in speech_act:
@@ -51,9 +56,10 @@ def add_instance(utter, speech_act, semantic_tagged):
         
     word_feats = ' '.join([word.lower() for word, _ in tokenized])
         
-    #self.__speech_act_instance_list.append((word_feats, sa_label_list))
 
-    #### edit
+    #### 
+    # dump data out
+    ####
     '''
     #### 
     # Duplicate method for multiple label
@@ -70,8 +76,6 @@ def add_instance(utter, speech_act, semantic_tagged):
     # merge all the label into a unique label
     flabel2.write( '_'.join(sa_label_list)+'\n')
 
-    # print semantic_instance
-    # print sa_label_list, word_feats
 
     return True
 
@@ -105,8 +109,9 @@ def __tokenize(utter, semantic_tagged=None):
 
     return result
 
-#def main():
-
+####
+# generate training data set
+####
 dataroot = '../../data_for_stu/'+targetF
 trainset = 'dstc5_'+targetF
 
@@ -127,7 +132,7 @@ fout.close()
 flabel.close()
 
 ###################
-# for generate test set result
+# generate test set
 ##################
 
 dataroot = '../../data_for_stu/'+testF
