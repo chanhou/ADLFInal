@@ -60,7 +60,7 @@ tf.app.flags.DEFINE_boolean("bidirectional_rnn", True,
 tf.app.flags.DEFINE_string("task", None, "Options: joint; intent; tagging")
 FLAGS = tf.app.flags.FLAGS
 
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.15)
     
 if FLAGS.max_sequence_length == 0:
     print ('Please indicate max sequence length. Exit')
@@ -403,7 +403,6 @@ def train():
         with open('../predict/tagging.txt.'+str(count_),'w')as w:
             for ind in range(len(tagging_list)):
                 w.write(' '.join(tagging_list[ind])+'\n')
-        
         count_ += 1
           
 def main(_):

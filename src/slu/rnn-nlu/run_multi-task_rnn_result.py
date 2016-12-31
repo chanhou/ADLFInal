@@ -12,6 +12,8 @@ from __future__ import print_function
 import math
 import os
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 import time
 
 import numpy as np
@@ -60,6 +62,9 @@ tf.app.flags.DEFINE_boolean("bidirectional_rnn", True,
 tf.app.flags.DEFINE_string("task", None, "Options: joint; intent; tagging")
 FLAGS = tf.app.flags.FLAGS
     
+
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.15)
+
 if FLAGS.max_sequence_length == 0:
     print ('Please indicate max sequence length. Exit')
     exit()
@@ -265,7 +270,7 @@ def train():
   tag_vocab, rev_tag_vocab = data_utils.initialize_vocabulary(tag_vocab_path)
   label_vocab, rev_label_vocab = data_utils.initialize_vocabulary(label_vocab_path)
     
-  with tf.Session() as sess:
+  with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
     # Create model.
     print("Max sequence length: %d." % _buckets[0][0])
     print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
@@ -277,7 +282,9 @@ def train():
     print ("Reading train/valid/test data (training set limit: %d)."
            % FLAGS.max_train_data_size)
     dev_set = read_data(in_seq_dev, out_seq_dev, label_dev)
+    #print(dev_set)
     test_set = read_data_test(in_seq_test)
+    #print(test_set)
     train_set = read_data(in_seq_train, out_seq_train, label_train)
     train_bucket_sizes = [len(train_set[b]) for b in xrange(len(_buckets))]
     train_total_size = float(sum(train_bucket_sizes))
@@ -352,7 +359,7 @@ def train():
                                              sequence_length, bucket_id, True)
                 elif task['intent'] == 1:
                   _, step_loss, classification_logits = model_test.classification_step(sess, encoder_inputs, labels,
-                                             sequence_length, bucket_id, True) 
+                                             sequence_length, bucket_id, True)
                 eval_loss += step_loss / len(data_set[bucket_id])
                 hyp_label = None
                 if task['intent'] == 1:
@@ -394,6 +401,7 @@ def train():
         #  subprocess.call(['mv', current_taging_valid_out_file, current_taging_valid_out_file + '.best_f1_%.2f' % best_valid_score])
         
         # test, run test after each validation for development purpose.
+        print('running testing...')
         _, _, intent_list, tagging_list = run_valid_test(test_set, 'Test')
         with open(FLAGS.output+'/intent.txt','w')as w:
             for intt in intent_list:
