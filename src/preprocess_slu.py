@@ -11,6 +11,7 @@ from semantic_tag_parser import SemanticTagParser
 import re
 
 targetF = 'valid'
+testF = 'dev' # test
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
@@ -116,7 +117,7 @@ for call in trainset:
     print(count)
     for (log_utter, translations, label_utter) in call:
         # if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
-        if (log_utter['speaker'] == 'Tourist'):
+        if (log_utter['speaker'] == 'Guide'):
             add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
     #break
     count += 1
@@ -125,5 +126,24 @@ fin.close()
 fout.close()
 flabel.close()
 
+###################
+# for generate test set result
+##################
+
+dataroot = '../data_for_stu/'+testF
+testset = 'dstc5_'+testF
+testset = dataset_walker.dataset_walker(testset, dataroot=dataroot, labels=False, translations=True)
+
+testF = 'test'
+ftest = open('./rnn-nlu/data/slu/'+testF+'/'+testF+'.seq.in','w')
+
+for call in testset:
+    for (log_utter, translations, label_utter) in call:
+        if (log_utter['speaker'] == 'Guide'):
+            if len(translations['translated']) > 0:
+                top_hyp = translations['translated'][0]['hyp']
+                ftest.write(top_hyp+'\n')
+
+ftest.close()
 #if __name__ == "__main__":
 #    main()
