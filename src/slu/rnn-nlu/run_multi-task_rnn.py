@@ -389,6 +389,7 @@ def train():
         # valid
         print('running validation...')
         valid_accuracy, valid_tagging_result, intent_list, tagging_list = run_valid_test(dev_set, 'Eval')
+        print('done valid..')
         if task['tagging'] == 1 and valid_tagging_result['f1'] > best_valid_score:
           best_valid_score = valid_tagging_result['f1']
           # save the best output file
@@ -397,6 +398,7 @@ def train():
         # test, run test after each validation for development purpose.
         print('running testset...')
         _, _, intent_list, tagging_list = run_valid_test(test_set, 'Test')
+        print('done test..')
         with open('../predict/intent.txt.'+str(count_),'w')as w:
             for intt in intent_list:
                 w.write(intt+'\n')
