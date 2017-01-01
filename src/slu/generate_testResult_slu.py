@@ -119,6 +119,37 @@ class DirectLabelProjection:
         return chr_word_id_map
 
 
+def __tokenize(utter, semantic_tagged=None):
+    result = None
+    if semantic_tagged is None:
+        result = [ word for word in nltk.word_tokenize(utter)]
+    else:
+        parser_raw = SemanticTagParser(False)
+        parser_tagged = SemanticTagParser(False)
+
+        segmented = ' '.join(nltk.word_tokenize(utter))
+        tagged = ' '.join(semantic_tagged)
+
+        parser_raw.feed(segmented)
+        parser_tagged.feed(tagged)
+
+        raw_chr_seq = parser_raw.get_chr_seq()
+        raw_space_seq = parser_raw.get_chr_space_seq()
+
+        tagged_chr_seq = parser_tagged.get_chr_seq()
+        tagged_space_seq = parser_tagged.get_chr_space_seq()
+
+        if raw_chr_seq == tagged_chr_seq:
+            merged_space_seq = [
+                x or y for x, y in zip(raw_space_seq, tagged_space_seq)]
+            word_seq = parser_tagged.tokenize(merged_space_seq)
+            tag_seq = parser_tagged.get_word_tag_seq()
+
+            result = [(word, tag) for word, tag in zip(word_seq, tag_seq)]
+
+    return result
+
+
 def main(argv):
     parser = argparse.ArgumentParser(description='Simple SLU baseline.')
     parser.add_argument('--trainset', dest='trainset', action='store', metavar='TRAINSET', required=True, help='The training dataset')
@@ -149,6 +180,7 @@ def main(argv):
     testset = dataset_walker.dataset_walker(args.testset, dataroot=args.dataroot, labels=False, translations=True)
     sys.stderr.write('Loading testing instances ... ')
     for call in testset:
+        cccc = 0
         this_session = {"session_id": call.log["session_id"], "utterances": []}
         for (log_utter, translations, label_utter) in call:
             if (log_utter['speaker'] == 'Guide' and args.roletype == 'GUIDE'):
@@ -157,9 +189,13 @@ def main(argv):
                     top_hyp = translations['translated'][0]['hyp']
                     pred_act = intent.readline()[:-1]
                     pred_semantic_tmp = slot.readline()[:-1].split(' ')
+                    top_hyp = __tokenize(top_hyp)
                     pred_semantic = []
                     for hhh, sss in zip(top_hyp, pred_semantic_tmp):
-                        pred_semantic.append((hhh,sss))
+                        pred_semantic.append((hhh.lower(),sss))
+                    #print pred_semantic_tmp
+                    #print top_hyp
+                    #print(pred_semantic)
                     #pred_act, pred_semantic = slu.pred(top_hyp)
 
                     combined_act = {}
@@ -178,15 +214,20 @@ def main(argv):
                     for act in combined_act:
                         attr = combined_act[act]
                         slu_result['speech_act'].append({'act': act, 'attributes': attr})
-                    align = translations['translated'][0]['align'] 
+                    #print slu_result
+                    align = translations['translated'][0]['align']
+                    #print translations['translated'] 
                     
-                    projected = projection.project(log_utter['transcript'], top_hyp, align, pred_semantic)
+                    projected = projection.project(log_utter['transcript'], ' '.join(top_hyp), align, pred_semantic)
                     slu_result['semantic_tagged'] = projection.convert_to_tagged_utter(projected)
+                    cccc += 1
+                    #if cccc==5: break
                 else:
                     slu_result['semantic_tagged'] = log_utter['transcript']
                     slu_result['speech_act'] = []
                 this_session['utterances'].append(slu_result)
         output['sessions'].append(this_session)
+        #break
 
     end_time = time.time()
     elapsed_time = end_time - start_time
