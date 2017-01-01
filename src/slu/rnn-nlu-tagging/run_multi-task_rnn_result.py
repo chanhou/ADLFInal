@@ -245,7 +245,7 @@ def create_model(session, source_vocab_size, target_vocab_size, label_vocab_size
   #  print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
   #model_train.saver.restore(session, ckpt.model_checkpoint_path)
 
-  ckpt = FLAGS.train_dir+'/model.ckpt-4500'
+  ckpt = FLAGS.train_dir+'/model.ckpt-9000'
   model_train.saver.restore(session, ckpt)
   #else:
   #  print("Created model with fresh parameters.")
@@ -406,9 +406,9 @@ def train():
         # test, run test after each validation for development purpose.
         print('running testing...')
         _, _, intent_list, tagging_list = run_valid_test(test_set, 'Test')
-        with open(FLAGS.output+'/intent.txt','w')as w:
-            for intt in intent_list:
-                w.write(intt+'\n')
+        #with open(FLAGS.output+'/intent.txt','w')as w:
+        #    for intt in intent_list:
+        #        w.write(intt+'\n')
         with open(FLAGS.output+'/tagging.txt','w')as w:
             for ind in range(len(tagging_list)):
                 w.write(' '.join(tagging_list[ind])+'\n')

@@ -27,7 +27,6 @@ import stat
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-
 #tf.app.flags.DEFINE_float("learning_rate", 0.1, "Learning rate.")
 #tf.app.flags.DEFINE_float("learning_rate_decay_factor", 0.9,
 #                          "Learning rate decays by this much.")
@@ -42,8 +41,6 @@ tf.app.flags.DEFINE_integer("in_vocab_size", 10000, "max vocab Size.")
 tf.app.flags.DEFINE_integer("out_vocab_size", 10000, "max tag vocab Size.")
 tf.app.flags.DEFINE_string("data_dir", "/tmp", "Data directory")
 tf.app.flags.DEFINE_string("train_dir", "/tmp", "Training directory.")
-tf.app.flags.DEFINE_string("output", "/tmp", "Output file.")
-
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
 tf.app.flags.DEFINE_integer("steps_per_checkpoint", 300,
@@ -62,10 +59,9 @@ tf.app.flags.DEFINE_boolean("bidirectional_rnn", True,
                             "Use birectional RNN")
 tf.app.flags.DEFINE_string("task", None, "Options: joint; intent; tagging")
 FLAGS = tf.app.flags.FLAGS
-    
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.15)
-
+    
 if FLAGS.max_sequence_length == 0:
     print ('Please indicate max sequence length. Exit')
     exit()
@@ -239,17 +235,13 @@ def create_model(session, source_vocab_size, target_vocab_size, label_vocab_size
           bidirectional_rnn=FLAGS.bidirectional_rnn,
           task=task)
 
-  #ckpt = tf.train.get_checkpoint_state(FLAGS.train_dir)
-  #print(ckpt)
-  #if ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
-  #  print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
-  #model_train.saver.restore(session, ckpt.model_checkpoint_path)
-
-  ckpt = FLAGS.train_dir+'/model.ckpt-4500'
-  model_train.saver.restore(session, ckpt)
-  #else:
-  #  print("Created model with fresh parameters.")
-  #  session.run(tf.initialize_all_variables())
+  ckpt = tf.train.get_checkpoint_state(FLAGS.train_dir)
+  if ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
+    print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
+    model_train.saver.restore(session, ckpt.model_checkpoint_path)
+  else:
+    print("Created model with fresh parameters.")
+    session.run(tf.initialize_all_variables())
   return model_train, model_test
         
 def train():
@@ -272,7 +264,7 @@ def train():
   vocab, rev_vocab = data_utils.initialize_vocabulary(vocab_path)
   tag_vocab, rev_tag_vocab = data_utils.initialize_vocabulary(tag_vocab_path)
   label_vocab, rev_label_vocab = data_utils.initialize_vocabulary(label_vocab_path)
-    
+
   with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
     # Create model.
     print("Max sequence length: %d." % _buckets[0][0])
@@ -285,9 +277,7 @@ def train():
     print ("Reading train/valid/test data (training set limit: %d)."
            % FLAGS.max_train_data_size)
     dev_set = read_data(in_seq_dev, out_seq_dev, label_dev)
-    #print(dev_set)
     test_set = read_data_test(in_seq_test)
-    #print(test_set)
     train_set = read_data(in_seq_train, out_seq_train, label_train)
     train_bucket_sizes = [len(train_set[b]) for b in xrange(len(_buckets))]
     train_total_size = float(sum(train_bucket_sizes))
@@ -302,7 +292,7 @@ def train():
     best_valid_score = 0
     best_test_score = 0
     count_ = 0
-    while 1: #model.global_step.eval() < FLAGS.max_training_steps:
+    while model.global_step.eval() < FLAGS.max_training_steps:
       random_number_01 = np.random.random_sample()
       bucket_id = min([i for i in xrange(len(train_buckets_scale))
                        if train_buckets_scale[i] > random_number_01])
@@ -325,14 +315,14 @@ def train():
       current_step += 1
 
       # Once in a while, we save checkpoint, print statistics, and run evals.
-      if 0 == 0:
-        #perplexity = math.exp(loss) if loss < 300 else float('inf')
-        #print ("global step %d step-time %.2f. Training perplexity %.2f" 
-        #    % (model.global_step.eval(), step_time, perplexity))
-        #sys.stdout.flush()
+      if current_step % FLAGS.steps_per_checkpoint == 0:
+        perplexity = math.exp(loss) if loss < 300 else float('inf')
+        print ("global step %d step-time %.2f. Training perplexity %.2f" 
+            % (model.global_step.eval(), step_time, perplexity))
+        sys.stdout.flush()
         # Save checkpoint and zero timer and loss.
         checkpoint_path = os.path.join(FLAGS.train_dir, "model.ckpt")
-        #model.saver.save(sess, checkpoint_path, global_step=model.global_step)
+        model.saver.save(sess, checkpoint_path, global_step=model.global_step)
         step_time, loss = 0.0, 0.0 
         
         def run_valid_test(data_set, mode): # mode: Eval, Test
@@ -362,7 +352,7 @@ def train():
                                              sequence_length, bucket_id, True)
                 elif task['intent'] == 1:
                   _, step_loss, classification_logits = model_test.classification_step(sess, encoder_inputs, labels,
-                                             sequence_length, bucket_id, True)
+                                             sequence_length, bucket_id, True) 
                 eval_loss += step_loss / len(data_set[bucket_id])
                 hyp_label = None
                 if task['intent'] == 1:
@@ -397,24 +387,25 @@ def train():
             return accuracy, tagging_eval_result, hyp_label_list, hyp_tag_list
             
         # valid
-        #valid_accuracy, valid_tagging_result, intent_list, tagging_list = run_valid_test(dev_set, 'Eval')
-        #if task['tagging'] == 1 and valid_tagging_result['f1'] > best_valid_score:
-        #  best_valid_score = valid_tagging_result['f1']
+        print('running validation...')
+        valid_accuracy, valid_tagging_result, intent_list, tagging_list = run_valid_test(dev_set, 'Eval')
+        print('done valid..')
+        if task['tagging'] == 1 and valid_tagging_result['f1'] > best_valid_score:
+          best_valid_score = valid_tagging_result['f1']
           # save the best output file
-        #  subprocess.call(['mv', current_taging_valid_out_file, current_taging_valid_out_file + '.best_f1_%.2f' % best_valid_score])
+          subprocess.call(['mv', current_taging_valid_out_file, current_taging_valid_out_file + '.best_f1_%.2f' % best_valid_score])
         
         # test, run test after each validation for development purpose.
-        print('running testing...')
+        print('running testset...')
         _, _, intent_list, tagging_list = run_valid_test(test_set, 'Test')
-        with open(FLAGS.output+'/intent.txt','w')as w:
-            for intt in intent_list:
-                w.write(intt+'\n')
-        with open(FLAGS.output+'/tagging.txt','w')as w:
+        print('done test..')
+        #with open('../predict/intent.txt.'+str(count_),'w')as w:
+        #    for intt in intent_list:
+        #        w.write(intt+'\n')
+        with open('../predict-sep/tagging.txt.'+str(count_),'w')as w:
             for ind in range(len(tagging_list)):
                 w.write(' '.join(tagging_list[ind])+'\n')
         count_ += 1
-        break
-      break
           
 def main(_):
     train()

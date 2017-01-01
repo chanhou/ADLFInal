@@ -157,7 +157,7 @@ def main(argv):
     parser.add_argument('--dataroot', dest='dataroot', action='store', required=True, metavar='PATH',  help='Will look for corpus in <destroot>/<dataset>/...')
     parser.add_argument('--testIntent', dest='testIntent', action='store', required=True, metavar='PATH',  help='File that rnn-nlu model predict')
     parser.add_argument('--testSlot', dest='testSlot', action='store', required=True, metavar='PATH',  help='File that rnn-nlu model predict')
-    parser.add_argument('--modelfile', dest='modelfile', action='store', required=True, metavar='MODEL_FILE',  help='File to write with trained model')
+    parser.add_argument('--predictF', dest='predictF', action='store', required=True, metavar='MODEL_FILE',  help='File to write with trained model')
     parser.add_argument('--outfile', dest='outfile', action='store', required=True, metavar='JSON_FILE',  help='File to write with SLU output')
     parser.add_argument('--roletype', dest='roletype', action='store', choices=['GUIDE',  'TOURIST'], required=True,  help='Target role')
 
@@ -170,7 +170,7 @@ def main(argv):
     intent = open(testIntent,'r')
     testSlot = args.testSlot
     slot = open(testSlot,'r')
-    hypqq = open('./predict/hyp','r')
+    hypqq = open(args.predictF+'/hyp','r')
     
     output = {'sessions': []}
     output['dataset'] = args.testset
