@@ -1,3 +1,4 @@
+import os
 import sys
 reload(sys)
 sys.path.insert(0, '../dstc5/scripts')
@@ -15,7 +16,7 @@ import lm
 # which data set to chooce
 ####
 targetF = 'valid' # train, valid
-testF = 'dev' # dev, test_slu
+testF = 'test_slu' # dev, test_slu
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
@@ -145,6 +146,7 @@ testset = 'dstc5_'+testF
 testset = dataset_walker.dataset_walker(testset, dataroot=dataroot, labels=False, translations=True)
 
 testF = 'test'
+os.system('rm '+'./rnn-nlu/data/slu/'+testF+'/*')
 ftest = open('./rnn-nlu/data/slu/'+testF+'/'+testF+'.seq.in','w')
 
 for call in testset:
