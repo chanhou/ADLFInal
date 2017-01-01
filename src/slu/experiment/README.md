@@ -7,14 +7,14 @@
 4. default parameter of rnn-nlu
 
 ### model:  (xx,  9000.ckpt )
-speech_act f1 : 0.3649
-semantic_tagged f1 : 0.3613
-Test_Acc: 0.3637
+- speech_act f1 : 0.3649
+- semantic_tagged f1 : 0.3613
+- Test_Acc: 0.3637
 
 ### model:  (18,  5400.ckpt )
-speech_act f1 : 0.3770
-semantic_tagged f1 : 0.3278
-Test_Acc: 0.3606
+- speech_act f1 : 0.3770
+- semantic_tagged f1 : 0.3278
+- Test_Acc: 0.3606
 
 
 # exp2
@@ -36,6 +36,17 @@ Separate training of intent and tagging:
 - For intent prediction, 
   - 'Okay' may reflect different meaning, i.e. Closing, Opening, ACK, etc...
   - How to incorporate the sequence information is the most important thing
+    - concate the previous word
 - For tagging filling,
   - prune the training data
+- Translated suck:
+  - use http://cmusphinx.sourceforge.net/wiki/download provided lm model
+  - Ex1
+    - Basic ally all know it .
+    - bas ic ally all i know .
+    - basic ally all know .
+    - bas ically, i know .
+  - Ex2
+    - t hank you
+    - thank you
 

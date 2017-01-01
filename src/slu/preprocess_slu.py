@@ -15,8 +15,11 @@ import lm
 #####
 # which data set to chooce
 ####
-targetF = 'valid' # train, valid
-testF = 'test_slu' # dev, test_slu
+targetF = 'train' # train, valid
+testF = 'dev' # dev, test_slu
+
+os.system('rm '+'./rnn-nlu/data/slu/*.txt')
+os.system('rm '+'./rnn-nlu/data/slu/'+targetF+'/*')
 
 fin = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
 fout = open('./rnn-nlu/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
@@ -120,7 +123,8 @@ trainset = 'dstc5_'+targetF
 trainset = dataset_walker.dataset_walker(trainset, dataroot=dataroot, labels=True, translations=True)
 
 ngram = lm.ArpaLM()
-ngram.read('../dstc5/scripts/dstc5.cn.3.lm')
+#ngram.read('../dstc5/scripts/dstc5.cn.3.lm')
+ngram.read('en-70k-0.2-pruned.lm.gz')
 
 count = 0 
 for call in trainset:
@@ -148,16 +152,36 @@ testset = dataset_walker.dataset_walker(testset, dataroot=dataroot, labels=False
 testF = 'test'
 os.system('rm '+'./rnn-nlu/data/slu/'+testF+'/*')
 ftest = open('./rnn-nlu/data/slu/'+testF+'/'+testF+'.seq.in','w')
+fhyp = open('./predict/hyp','w')
 
 for call in testset:
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide'):
             if len(translations['translated']) > 0:
-                top_hyp = translations['translated'][0]['hyp']
-                tokenized = __tokenize(top_hyp)
+                best_hyp = []
+                best_score = -100000
+                best_ind = -1
+                for qqqq in range(len(translations['translated'])):
+                    top_hyp = translations['translated'][qqqq]['hyp']
+                    tokenized = __tokenize(top_hyp)
+                    score = 0
+                    for i in range(len(tokenized)):
+                        if i==0: 
+                            score += ngram.score((tokenized[i]))
+                        else: 
+                            score += ngram.score((tokenized[i-1],tokenized[i]))
+                    if score > best_score:
+                        best_score = score
+                        best_hyp = tokenized
+                        best_ind = qqqq
+                    #print top_hyp
+                #print best_ind, best_hyp
+                tokenized = best_hyp 
             #tokenized = __tokenize(log_utter['transcript'])
                 word_feats = ' '.join([word.lower() for word, _ in tokenized])
                 ftest.write(word_feats+'\n')
+                fhyp.write(str(best_ind)+'\n')
+                
 
 ftest.close()
 #if __name__ == "__main__":

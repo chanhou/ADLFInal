@@ -170,6 +170,7 @@ def main(argv):
     intent = open(testIntent,'r')
     testSlot = args.testSlot
     slot = open(testSlot,'r')
+    hypqq = open('./predict/hyp','r')
     
     output = {'sessions': []}
     output['dataset'] = args.testset
@@ -186,7 +187,7 @@ def main(argv):
             if (log_utter['speaker'] == 'Guide' and args.roletype == 'GUIDE'):
                 slu_result = {'utter_index': log_utter['utter_index']}
                 if len(translations['translated']) > 0:
-                    top_hyp = translations['translated'][0]['hyp']
+                    top_hyp = translations['translated'][int(hypqq.readline())]['hyp']
                     pred_act = intent.readline()[:-1]
                     pred_semantic_tmp = slot.readline()[:-1].split(' ')
                     top_hyp = __tokenize(top_hyp)
