@@ -52,22 +52,28 @@ def load_data_and_labels(check):
     valid_label = []
     test = []
     with open('./data/slu/train/train.seq.in','r')as f:
-        train.append( clean_str( f.readline().strip() ) )
+        for line in f:
+            train.append( clean_str( line.strip() ) )
     with open('./data/slu/valid/valid.seq.in','r')as f:
-        valid.append( clean_str( f.readline().strip() ) )
+        for line in f:
+            valid.append( clean_str( line.strip() ) )
     with open('./data/slu/test/test.seq.in','r')as f:
-        test.append( clean_str( f.readline().strip() ) )
+        for line in f:
+            test.append( clean_str( line.strip() ) )
 
     with open('./data/slu/train/train.label','r')as f:
-        train_label.append(set(f.readline()[:-1].split('|')))
+        for line in f:
+            train_label.append(set(line.strip().split('|')))
     with open('./data/slu/valid/valid.label','r')as f:
-        valid_label.append(set(f.readline()[:-1].split('|')))
+        for line in f:
+            valid_label.append(set(line.strip().split('|')))
 
     if check=='train':
         mlb = MultiLabelBinarizer()
         train_label = mlb.fit_transform(train_label)
+        print(mlb.classes_)
         with open('./mlb.pickle','wb')as w:
-            pickle.dump(w, mlb)
+            pickle.dump(mlb, w)
     elif check=='test':
         mlb = pickle.load(open('./mlb.pickle','rb'))
         train_label = mlb.transform(train_label)

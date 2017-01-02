@@ -67,12 +67,20 @@ Separate training of intent and tagging:
 - diff with trying1, use lm to choose best hyp
 - preformance
   - speech_act f1 : 0.3786
-  - semantic_tagged f1 : 0.2342
-  - Test_Acc: 0.3305
+  - semantic_tagged f1 : 0.
+  - Test_Acc: 0.
 
 ### trying3
+- using language model to choose best hypo
 - tagging
     - valid using all data (trying1 use prune set)
+    - using 15 (4800, 0.3476) 
 - intent
     - figure out how to perform multilabel classification
     - concate the label with '|', result as 833 (original 65) unique labels ><
+    - ignore the above option, duplicate data to multiple based on the label
+    - using 9 (3000, 0.4683) 
+- performance
+    - speech_act f1 : 0.4471
+    - semantic_tagged f1 : 0.3467
+    - Test_Acc: 0.4137

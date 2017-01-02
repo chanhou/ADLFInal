@@ -59,7 +59,7 @@ x_train, x_dev, x_test, y_train, y_dev, mlb  = data_helpers.load_data_and_labels
 # Build vocabulary
 max_document_length = max([len(x.split(" ")) for x in x_train])
 vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
-x = np.array(list(vocab_processor.fit_transform(x_train)))
+x_train = np.array(list(vocab_processor.fit_transform(x_train)))
 
 # Randomly shuffle data
 np.random.seed(10)
@@ -81,6 +81,9 @@ print("Train/Dev split: {:d}/{:d}".format(len(y_train), len(y_dev)))
 
 # Training
 # ==================================================
+
+print(mlb.classes_)
+print(len(mlb.classes_))
 
 with tf.Graph().as_default():
     session_conf = tf.ConfigProto(
@@ -138,13 +141,13 @@ with tf.Graph().as_default():
         checkpoint_prefix = os.path.join(checkpoint_dir, "model")
         if not os.path.exists(checkpoint_dir):
             os.makedirs(checkpoint_dir)
-        saver = tf.train.Saver(tf.global_variables(), max_to_keep=1000)
+        saver = tf.train.Saver(tf.all_variables(), max_to_keep=1000)
 
         # Write vocabulary
         vocab_processor.save(os.path.join(out_dir, "vocab"))
 
         # Initialize all variables
-        sess.run(tf.global_variables_initializer())
+        sess.run(tf.initialize_all_variables())
 
         def train_step(x_batch, y_batch):
             """
@@ -155,11 +158,11 @@ with tf.Graph().as_default():
               cnn.input_y: y_batch,
               cnn.dropout_keep_prob: FLAGS.dropout_keep_prob
             }
-            _, step, summaries, loss, accuracy = sess.run(
-                [train_op, global_step, train_summary_op, cnn.loss, cnn.accuracy],
+            _, step, summaries, loss, accuracy, accuracy2 = sess.run(
+                [train_op, global_step, train_summary_op, cnn.loss, cnn.accuracy, cnn.accuracy2],
                 feed_dict)
             time_str = datetime.datetime.now().isoformat()
-            print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
+            #print("{}: step {}, loss {:g}, acc {:g}, acc2 {:g}".format(time_str, step, loss, accuracy, accuracy2))
             train_summary_writer.add_summary(summaries, step)
 
         def dev_step(x_batch, y_batch, writer=None):
@@ -171,11 +174,11 @@ with tf.Graph().as_default():
               cnn.input_y: y_batch,
               cnn.dropout_keep_prob: 1.0
             }
-            step, summaries, loss, accuracy, batch_predictions = sess.run(
-                [global_step, dev_summary_op, cnn.loss, cnn.accuracy, cnn.predictions],
+            step, summaries, loss, accuracy, accuracy2 = sess.run(
+                [global_step, dev_summary_op, cnn.loss, cnn.accuracy, cnn.accuracy2],
                 feed_dict)
             time_str = datetime.datetime.now().isoformat()
-            print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
+            print("{}: step {}, loss {:g}, acc {:g}, acc2 {:g}".format(time_str, step, loss, accuracy, accuracy2))
             if writer:
                 writer.add_summary(summaries, step)
 

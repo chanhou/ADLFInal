@@ -84,7 +84,11 @@ with graph.as_default():
 
         for x_test_batch in batches:
             batch_predictions = sess.run(predictions, {input_x: x_test_batch, dropout_keep_prob: 1.0})
-            all_predictions = np.concatenate((all_predictions, batch_predictions),axis=0)
+            #print(batch_predictions.shape)
+            if len(all_predictions)!=0:
+                all_predictions = np.concatenate((all_predictions, batch_predictions),axis=0)
+            else:
+                all_predictions = np.copy(batch_predictions)
 
 # Print accuracy if y_test is defined
 if y_test is not None:
@@ -93,11 +97,12 @@ if y_test is not None:
     print("Accuracy: {:g}".format(correct_predictions/float(len(y_test))))
 
 # Save the evaluation to a csv
-predictions_human_readable = np.column_stack((np.array(x_raw), all_predictions))
+#predictions_human_readable = np.column_stack((np.array(x_raw), all_predictions))
 # out_path = os.path.join(FLAGS.checkpoint_dir, "..", "prediction.csv")
 out_path = '../predict-sep/intent-cnn.txt'
 print("Saving evaluation to {0}".format(out_path))
 with open(out_path, 'w') as f:
     #csv.writer(f).writerows(predictions_human_readable)
-    for i in all_prediction:
-        f.write('|'.join(mlb.inverse_transform(i))+'\n')
+    for i in all_predictions:
+        print(mlb.inverse_transform(np.array([i])))
+        #f.write('|'.join(mlb.inverse_transform([i]))+'\n')
