@@ -71,8 +71,10 @@ class TextCNN(object):
             l2_loss += tf.nn.l2_loss(W)
             l2_loss += tf.nn.l2_loss(b)
             self.scores = tf.nn.xw_plus_b(self.h_drop, W, b, name="scores")
-            # self.predictions = tf.argmax(self.scores, 1, name="predictions")
-            self.predictions = tf.round(tf.nn.sigmoid(self.scores), name="predictions")
+            
+            #self.predictions = tf.scatter_update( tf.round(tf.nn.sigmoid(self.scores)), [tf.argmax(self.scores, 1)], [1], name="predictions")
+            self.predictions = tf.round(tf.nn.sigmoid(self.scores),name="predictions")
+            self.predictions2 = tf.argmax(self.scores, 1, name="predictions2")
 
         # CalculateMean cross-entropy loss
         with tf.name_scope("loss"):

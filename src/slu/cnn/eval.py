@@ -67,6 +67,7 @@ with graph.as_default():
         # Load the saved meta graph and restore variables
         saver = tf.train.import_meta_graph("{}.meta".format(checkpoint_file))
         saver.restore(sess, checkpoint_file)
+        #tf.saver.restore(sess,checkpoint_file)
 
         # Get the placeholders from the graph by name
         input_x = graph.get_operation_by_name("input_x").outputs[0]
@@ -75,6 +76,7 @@ with graph.as_default():
 
         # Tensors we want to evaluate
         predictions = graph.get_operation_by_name("output/predictions").outputs[0]
+        predictions2 = graph.get_operation_by_name("output/predictions2").outputs[0]
 
         # Generate batches for one epoch
         batches = data_helpers.batch_iter(list(x_test), FLAGS.batch_size, 1, shuffle=False)
@@ -83,7 +85,8 @@ with graph.as_default():
         all_predictions = []
 
         for x_test_batch in batches:
-            batch_predictions = sess.run(predictions, {input_x: x_test_batch, dropout_keep_prob: 1.0})
+            batch_predictions, pred22 = sess.run( [predictions,predictions2], {input_x: x_test_batch, dropout_keep_prob: 1.0})
+            batch_predictions[np.arange(len(pred22)), pred22] = 1
             #print(batch_predictions.shape)
             if len(all_predictions)!=0:
                 all_predictions = np.concatenate((all_predictions, batch_predictions),axis=0)
@@ -99,10 +102,10 @@ if y_test is not None:
 # Save the evaluation to a csv
 #predictions_human_readable = np.column_stack((np.array(x_raw), all_predictions))
 # out_path = os.path.join(FLAGS.checkpoint_dir, "..", "prediction.csv")
-out_path = '../predict-sep/intent-cnn.txt'
+out_path = '../predict-sep/intent-cnn12800.txt'
 print("Saving evaluation to {0}".format(out_path))
 with open(out_path, 'w') as f:
     #csv.writer(f).writerows(predictions_human_readable)
     for i in all_predictions:
-        print(mlb.inverse_transform(np.array([i])))
-        #f.write('|'.join(mlb.inverse_transform([i]))+'\n')
+        #print(mlb.inverse_transform(np.array([i])))
+        f.write('|'.join(list(mlb.inverse_transform(np.array([i]))[0]))+'\n')
