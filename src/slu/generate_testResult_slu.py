@@ -184,7 +184,8 @@ def main(argv):
         cccc = 0
         this_session = {"session_id": call.log["session_id"], "utterances": []}
         for (log_utter, translations, label_utter) in call:
-            if (log_utter['speaker'] == 'Guide' and args.roletype == 'GUIDE'):
+            #if (log_utter['speaker'] == 'Guide' and args.roletype == 'GUIDE'):
+            if True:
                 slu_result = {'utter_index': log_utter['utter_index']}
                 if len(translations['translated']) > 0:
                     top_hyp = translations['translated'][int(hypqq.readline())]['hyp']
@@ -202,14 +203,15 @@ def main(argv):
                     combined_act = {}
                     #for act_label in reduce(operator.add, pred_act):
                     #print(act_label)
-                    act_label = pred_act
-                    m = re.match('^([^_]+)_(.+)$', act_label)
-                    act = m.group(1)
-                    attr = m.group(2)
-                    if act not in combined_act:
-                        combined_act[act] = []
-                    if attr not in combined_act[act]:
-                        combined_act[act].append(attr)
+                    for tttt in pred_act.split('|'):
+                        act_label = tttt
+                        m = re.match('^([^_]+)_(.+)$', act_label)
+                        act = m.group(1)
+                        attr = m.group(2)
+                        if act not in combined_act:
+                            combined_act[act] = []
+                        if attr not in combined_act[act]:
+                            combined_act[act].append(attr)
 
                     slu_result['speech_act'] = []
                     for act in combined_act:

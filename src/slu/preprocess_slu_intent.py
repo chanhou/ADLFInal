@@ -15,7 +15,7 @@ import lm
 #####
 # which data set to chooce
 ####
-targetF = 'train' # train, valid
+targetF = 'valid' # train, valid
 testF = 'dev' # dev, test_slu
 
 os.system('rm '+'./rnn-nlu-intent/data/slu/*.txt')
@@ -81,13 +81,15 @@ def add_instance(utter, speech_act, semantic_tagged, speaker, present):
         fout.write(' '.join(IOB_tag)+'\n')
         flabel.write(llll+'\n')
     '''
-    if speaker == 'Guide':
-        fin.write(' '.join(original_sent)+'\n')
-        fout.write(' '.join(IOB_tag)+'\n')
-        # choose the first one as the label
-        flabel.write( sa_label_list[0]  +'\n')
-        # merge all the label into a unique label
-        flabel2.write( '_'.join(sa_label_list)+'\n')
+    #if speaker == 'Guide':
+    if True:
+        for wwww in range(len(sa_label_list)):
+            fin.write(' '.join(original_sent)+'\n')
+            fout.write(' '.join(IOB_tag)+'\n')
+            # choose the first one as the label
+            flabel.write( sa_label_list[wwww]  +'\n')
+            # merge all the label into a unique label
+            #flabel.write( '|'.join(sa_label_list)+'\n')
 
     return True
 
@@ -131,7 +133,7 @@ trainset = dataset_walker.dataset_walker(trainset, dataroot=dataroot, labels=Tru
 
 ngram = lm.ArpaLM()
 #ngram.read('../dstc5/scripts/dstc5.cn.3.lm')
-ngram.read('./en-70k-0.2-pruned.lm.gz')
+#ngram.read('./en-70k-0.2-pruned.lm.gz')
 
 count = 0 
 for call in trainset:
@@ -167,8 +169,7 @@ for call in testset:
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
             if len(translations['translated']) > 0:
-                #top_hyp = translations['translated'][0]['hyp']
-                #tokenized = __tokenize(top_hyp)
+                '''
                 best_hyp = []
                 best_score = -100000
                 best_ind = -1
@@ -188,6 +189,11 @@ for call in testset:
                     #print top_hyp
                 #print best_ind, best_hyp
                 tokenized = best_hyp 
+                '''
+                top_hyp = translations['translated'][0]['hyp']
+                tokenized = __tokenize(top_hyp)
+                best_ind = 0                
+
                 if len(present) == 0:
                     tmppp = ['<s>','|']
                 else:
@@ -197,6 +203,7 @@ for call in testset:
                 word_feats = ' '.join([word.lower() for word, _ in tokenized])
                 word_feats = ' '.join(tmppp)+' '+word_feats
                 if (log_utter['speaker'] == 'Guide'):
+                #if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
                     ftest.write(word_feats+'\n')
                     fhyp.write(str(best_ind)+'\n')
 

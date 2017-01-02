@@ -18,19 +18,19 @@ import lm
 targetF = 'train' # train, valid
 testF = 'dev' # dev, test_slu
 
-os.system('rm '+'./rnn-nlu-tagging/data/slu/*.txt')
-os.system('rm '+'./rnn-nlu-tagging/data/slu/'+targetF+'/*')
+os.system('rm '+'./cnn/data/slu/*.txt')
+os.system('rm '+'./cnn/data/slu/'+targetF+'/*')
 
-fin = open('./rnn-nlu-tagging/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
-fout = open('./rnn-nlu-tagging/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
-flabel = open('./rnn-nlu-tagging/data/slu/'+targetF+'/'+targetF+'.label','w')
-flabel2 = open('./rnn-nlu-tagging/data/slu/'+targetF+'/'+targetF+'.label2','w')
+fin = open('./cnn/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
+fout = open('./cnn/data/slu/'+targetF+'/'+targetF+'.seq.out','w')
+flabel = open('./cnn/data/slu/'+targetF+'/'+targetF+'.label','w')
+flabel2 = open('./cnn/data/slu/'+targetF+'/'+targetF+'.label2','w')
 
 
 ####
 # original function provided by baseline_slu.py
 ####
-def add_instance(utter, speech_act, semantic_tagged):
+def add_instance(utter, speech_act, semantic_tagged, speaker, present):
     tokenized = __tokenize(utter, semantic_tagged)
     if tokenized is None:
         return False
@@ -52,7 +52,15 @@ def add_instance(utter, speech_act, semantic_tagged):
         ####
         original_sent.append(unicode(word.lower()))
         IOB_tag.append(unicode(sem_label))
-
+    if len(present)==0:
+        tmppp = ['<s>','|']
+    else:
+        tmppp = list(present) + ['|']
+    for ___ in range(len(present)):
+        present.pop()
+    present.extend(original_sent)
+    original_sent = tmppp + original_sent
+    
     sa_label_list = []
     for sa in speech_act:
         sa_labels = ['%s_%s' % (sa['act'], attr) for attr in sa['attributes']]
@@ -61,7 +69,6 @@ def add_instance(utter, speech_act, semantic_tagged):
         
     word_feats = ' '.join([word.lower() for word, _ in tokenized])
         
-
     #### 
     # dump data out
     ####
@@ -74,16 +81,14 @@ def add_instance(utter, speech_act, semantic_tagged):
         fout.write(' '.join(IOB_tag)+'\n')
         flabel.write(llll+'\n')
     '''
-    cccc = 0
-    for dddd in range(len(IOB_tag)):
-        if IOB_tag[dddd]=='O': cccc += 1
-    if cccc != len(IOB_tag) or targetF=='valid':
+    #if speaker == 'Guide':
+    if True:
         fin.write(' '.join(original_sent)+'\n')
         fout.write(' '.join(IOB_tag)+'\n')
         # choose the first one as the label
-        flabel.write( sa_label_list[0]  +'\n')
+        #flabel.write( sa_label_list[wwww]  +'\n')
         # merge all the label into a unique label
-        #flabel2.write( '_'.join(sa_label_list)+'\n')
+        flabel.write( '|'.join(sa_label_list)+'\n')
 
     return True
 
@@ -127,16 +132,17 @@ trainset = dataset_walker.dataset_walker(trainset, dataroot=dataroot, labels=Tru
 
 ngram = lm.ArpaLM()
 #ngram.read('../dstc5/scripts/dstc5.cn.3.lm')
-#ngram.read('en-70k-0.2-pruned.lm.gz')
+#ngram.read('./en-70k-0.2-pruned.lm.gz')
 
 count = 0 
 for call in trainset:
     print(count)
+    present = []
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
-        #if (log_utter['speaker'] == 'Guide'):
+        # if (log_utter['speaker'] == 'Guide'):
             #print(log_utter['transcript'],label_utter['speech_act'],label_utter['semantic_tagged'])
-            add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'], log_utter['speaker'], present)
     #break
     count += 1
 
@@ -153,14 +159,14 @@ testset = 'dstc5_'+testF
 testset = dataset_walker.dataset_walker(testset, dataroot=dataroot, labels=False, translations=True)
 
 testF = 'test'
-os.system('rm '+'./rnn-nlu-tagging/data/slu/'+testF+'/*')
-ftest = open('./rnn-nlu-tagging/data/slu/'+testF+'/'+testF+'.seq.in','w')
-fhyp = open('./predict-sep/hyp','r')
+os.system('rm '+'./cnn/data/slu/'+testF+'/*')
+ftest = open('./cnn/data/slu/'+testF+'/'+testF+'.seq.in','w')
+fhyp = open('./predict-sep/hyp','w')
 
 for call in testset:
+    present = []
     for (log_utter, translations, label_utter) in call:
-        if (log_utter['speaker'] == 'Guide'):
-        #if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
+        if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
             if len(translations['translated']) > 0:
                 '''
                 best_hyp = []
@@ -181,15 +187,26 @@ for call in testset:
                         best_ind = qqqq
                     #print top_hyp
                 #print best_ind, best_hyp
-                '''
-                best_hyp = translations['translated'][int(fhyp.readline())]['hyp']
-                best_hyp = __tokenize(best_hyp)
                 tokenized = best_hyp 
+                '''
+                top_hyp = translations['translated'][0]['hyp']
+                tokenized = __tokenize(top_hyp)
+                best_ind = 0                
+
+                if len(present) == 0:
+                    tmppp = ['<s>','|']
+                else:
+                    tmppp = list(present) + ['|']
+                present = [word.lower() for word, _ in tokenized]
             #tokenized = __tokenize(log_utter['transcript'])
                 word_feats = ' '.join([word.lower() for word, _ in tokenized])
-                ftest.write(word_feats+'\n')
-                #fhyp.write(str(best_ind)+'\n')
+                word_feats = ' '.join(tmppp)+' '+word_feats
+                if (log_utter['speaker'] == 'Guide'):
+                #if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
+                    ftest.write(word_feats+'\n')
+                    fhyp.write(str(best_ind)+'\n')
 
 ftest.close()
+fhyp.close()
 #if __name__ == "__main__":
 #    main()

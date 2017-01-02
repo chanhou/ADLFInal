@@ -245,7 +245,7 @@ def create_model(session, source_vocab_size, target_vocab_size, label_vocab_size
   #  print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
   #model_train.saver.restore(session, ckpt.model_checkpoint_path)
 
-  ckpt = FLAGS.train_dir+'/model.ckpt-9000'
+  ckpt = FLAGS.train_dir+'/model.ckpt-8400'
   model_train.saver.restore(session, ckpt)
   #else:
   #  print("Created model with fresh parameters.")

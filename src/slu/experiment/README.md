@@ -50,3 +50,29 @@ Separate training of intent and tagging:
     - t hank you
     - thank you
 
+### trying1
+- use default 0 as top hyp
+- separate training of intent and tagging
+  - intent: use only guide information but include previous content
+  - tagging: pruninig 
+- model
+  - tagging 8400
+  - intent 3300
+- performance
+  - speech_act f1 : 0.3858
+  - semantic_tagged f1 : 0.3455
+  - Test_Acc: 0.3724
+
+### trying2
+- diff with trying1, use lm to choose best hyp
+- preformance
+  - speech_act f1 : 0.3786
+  - semantic_tagged f1 : 0.2342
+  - Test_Acc: 0.3305
+
+### trying3
+- tagging
+    - valid using all data (trying1 use prune set)
+- intent
+    - figure out how to perform multilabel classification
+    - concate the label with '|', result as 833 (original 65) unique labels ><
