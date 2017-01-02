@@ -188,7 +188,8 @@ def main(argv):
             if True:
                 slu_result = {'utter_index': log_utter['utter_index']}
                 if len(translations['translated']) > 0:
-                    top_hyp = translations['translated'][int(hypqq.readline())]['hyp']
+                    best_ind = int(hypqq.readline())
+                    top_hyp = translations['translated'][best_ind]['hyp']
                     pred_act = intent.readline()[:-1]
                     pred_semantic_tmp = slot.readline()[:-1].split(' ')
                     top_hyp = __tokenize(top_hyp)
@@ -218,7 +219,7 @@ def main(argv):
                         attr = combined_act[act]
                         slu_result['speech_act'].append({'act': act, 'attributes': attr})
                     #print slu_result
-                    align = translations['translated'][0]['align']
+                    align = translations['translated'][best_ind]['align']
                     #print translations['translated'] 
                     
                     projected = projection.project(log_utter['transcript'], ' '.join(top_hyp), align, pred_semantic)
