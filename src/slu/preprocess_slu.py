@@ -15,7 +15,7 @@ import lm
 #####
 # which data set to chooce
 ####
-targetF = 'train' # train, valid
+targetF = 'valid' # train, valid
 testF = 'dev' # dev, test_slu
 
 os.system('rm '+'./rnn-nlu/data/slu/*.txt')
@@ -65,10 +65,11 @@ def add_instance(utter, speech_act, semantic_tagged):
     #### 
     # dump data out
     ####
-    '''
+    
     #### 
     # Duplicate method for multiple label
     ####
+    
     for llll in sa_label_list:
         fin.write(' '.join(original_sent)+'\n')
         fout.write(' '.join(IOB_tag)+'\n')
@@ -80,6 +81,7 @@ def add_instance(utter, speech_act, semantic_tagged):
     flabel.write( sa_label_list[0]  +'\n')
     # merge all the label into a unique label
     flabel2.write( '_'.join(sa_label_list)+'\n')
+    '''
 
 
     return True
@@ -114,6 +116,32 @@ def __tokenize(utter, semantic_tagged=None):
 
     return result
 
+
+def strip_ml_tags(in_text):
+    # Routine by Micah D. Cochran
+    # Submitted on 26 Aug 2005
+    # This routine is allowed to be put under any license Open Source (GPL, BSD, LGPL, etc.) License 
+    # or any Propriety License. Effectively this routine is in public domain. Please attribute where appropriate.
+    # http://code.activestate.com/recipes/440481-strips-xmlhtml-tags-from-string/
+    s_list = list(in_text)
+    i,j = 0,0
+    
+    while i < len(s_list):
+        # iterate until a left-angle bracket is found
+        if s_list[i] == '<':
+            while s_list[i] != '>':
+                # pop everything from the the left-angle bracket until the right-angle bracket
+                s_list.pop(i)
+                
+            # pops the right-angle bracket, too
+            s_list.pop(i)
+        else:
+            i=i+1
+            
+    # convert the list back into text
+    join_char=''
+    return join_char.join(s_list)
+
 ####
 # generate training data set
 ####
@@ -130,10 +158,16 @@ count = 0
 for call in trainset:
     print(count)
     for (log_utter, translations, label_utter) in call:
-        #if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
-        if (log_utter['speaker'] == 'Guide'):
+        if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
+        #if (log_utter['speaker'] == 'Guide'):
             #print(log_utter['transcript'],label_utter['speech_act'],label_utter['semantic_tagged'])
-            add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            #add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            for qq in range(len(label_utter['semantic_tagged'])):
+                sentt = strip_ml_tags(label_utter['semantic_tagged'][qq])
+                #print (label_utter['semantic_tagged'][qq])
+                #print ( sentt)
+                #print( ' '.join(sentt), [label_utter['speech_act'][qq]], [label_utter['semantic_tagged'][qq]])
+                add_instance(sentt, [label_utter['speech_act'][qq]], [label_utter['semantic_tagged'][qq]])
     #break
     count += 1
 
