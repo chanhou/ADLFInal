@@ -18,7 +18,7 @@ import lm
 targetF = 'train' # train, valid
 testF = 'dev' # dev, test_slu
 
-os.system('rm '+'./rnn-nlu-tagging/data/slu/*.txt')
+#os.system('rm '+'./rnn-nlu-tagging/data/slu/*.txt')
 os.system('rm '+'./rnn-nlu-tagging/data/slu/'+targetF+'/*')
 
 fin = open('./rnn-nlu-tagging/data/slu/'+targetF+'/'+targetF+'.seq.in','w')
@@ -77,6 +77,7 @@ def add_instance(utter, speech_act, semantic_tagged):
     cccc = 0
     for dddd in range(len(IOB_tag)):
         if IOB_tag[dddd]=='O': cccc += 1
+    cccc = -1
     if cccc != len(IOB_tag) or targetF=='valid':
         fin.write(' '.join(original_sent)+'\n')
         fout.write(' '.join(IOB_tag)+'\n')
@@ -117,6 +118,46 @@ def __tokenize(utter, semantic_tagged=None):
 
     return result
 
+
+def strip_ml_tags(in_text):
+    # Routine by Micah D. Cochran
+    # Submitted on 26 Aug 2005
+    # This routine is allowed to be put under any license Open Source (GPL, BSD, LGPL, etc.) License 
+    # or any Propriety License. Effectively this routine is in public domain. Please attribute where appropriate.
+    # http://code.activestate.com/recipes/440481-strips-xmlhtml-tags-from-string/
+
+    """Description: Removes all HTML/XML-like tags from the input text.
+    Inputs: s --> string of text
+    Outputs: text string without the tags
+    
+    # doctest unit testing framework
+
+    >>> test_text = "Keep this Text <remove><me /> KEEP </remove> 123"
+    >>> strip_ml_tags(test_text)
+    'Keep this Text  KEEP  123'
+    """
+    # convert in_text to a mutable object (e.g. list)
+    s_list = list(in_text)
+    i,j = 0,0
+    
+    while i < len(s_list):
+        # iterate until a left-angle bracket is found
+        if s_list[i] == '<':
+            while s_list[i] != '>':
+                # pop everything from the the left-angle bracket until the right-angle bracket
+                s_list.pop(i)
+                
+            # pops the right-angle bracket, too
+            s_list.pop(i)
+        else:
+            i=i+1
+            
+    # convert the list back into text
+    join_char=''
+    return join_char.join(s_list)
+
+
+
 ####
 # generate training data set
 ####
@@ -136,7 +177,10 @@ for call in trainset:
         if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
         #if (log_utter['speaker'] == 'Guide'):
             #print(log_utter['transcript'],label_utter['speech_act'],label_utter['semantic_tagged'])
-            add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            #add_instance(log_utter['transcript'], label_utter['speech_act'], label_utter['semantic_tagged'])
+            for qq in range(len(label_utter['semantic_tagged'])):
+                sentt = strip_ml_tags(label_utter['semantic_tagged'][qq])
+                add_instance(sentt, [label_utter['speech_act'][qq]], [label_utter['semantic_tagged'][qq]])
     #break
     count += 1
 
@@ -160,9 +204,10 @@ fhyp = open('./predict-sep/hyp','r')
 for call in testset:
     for (log_utter, translations, label_utter) in call:
         if (log_utter['speaker'] == 'Guide'):
+        #if (log_utter['speaker'] == 'Tourist'):
         #if (log_utter['speaker'] == 'Guide' or log_utter['speaker'] == 'Tourist' ):
             if len(translations['translated']) > 0:
-                '''
+                '''                
                 best_hyp = []
                 best_score = -100000
                 best_ind = -1
