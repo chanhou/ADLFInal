@@ -21,7 +21,7 @@ def main(argv):
     parser.add_argument('--roletype', dest='roletype', action='store', choices=['GUIDE',  'TOURIST'], required=True,  help='Target role')
     args = parser.parse_args()
 
-    """original
+    # """original
 
     dataset = dataset_walker.dataset_walker(args.dataset, dataroot=args.dataroot, labels=True, translations=False)
 
@@ -131,7 +131,7 @@ def main(argv):
         with open(os.path.join(path, 'slg.tourist.label.json'), 'w') as fp:
             json.dump(output_tourist, fp)
 
-    original"""
+    # original"""
 
 
     trainset = dataset_walker.dataset_walker(args.dataset, dataroot=args.dataroot, labels=True, translations=True, task='SLG', roletype=args.roletype.lower())
@@ -176,11 +176,50 @@ def main(argv):
                 split += " "
                 
                 tag = ""
+                # if len(log_utter['semantic_tags']) > 1:
+                #     print log_utter['semantic_tags']
+                # tag
+                for dictionary in log_utter['semantic_tags']:
+                    element = []
+                #     element.append(dictionary[u'main'])
+                #     subdict = dictionary[u'attributes']
+                #     for key in subdict:
+                #         element.append(subdict[key])
+                #     tag += "_".join(element)
+                #     tag += " "
+                # split += tag
+                # string += tag
+                # #print len(translations['translated'])
+                # #print string
+                
+
+                """   for YoHuan """
+                """
+                string = ""
+                split = ""
+                element = []
+                for dictionary in log_utter['speech_act']:
+                    elementSplit = []
+                    for sub in dictionary[u'attributes']:
+                        element.append(sub)
+                        elementSplit.append(sub)
+                    element.append(dictionary[u'act'])
+                    elementSplit.append(dictionary[u'act'])
+                    intentSplit = "_".join(elementSplit)
+                    split += " "
+                    split += intentSplit
+                intent = "_".join(element)
+                string += intent
+                string += " "
+                split += " "
+                tag = ""
+                mentionList = []
                 #print log_utter['semantic_tags']
                 # tag
                 for dictionary in log_utter['semantic_tags']:
                     element = []
                     element.append(dictionary[u'main'])
+                    mentionList.append(dictionary[u'mention'])
                     subdict = dictionary[u'attributes']
                     for key in subdict:
                         element.append(subdict[key])
@@ -188,11 +227,14 @@ def main(argv):
                     tag += " "
                 split += tag
                 string += tag
+                tagList = []
+                if len(tag.strip()) > 0:
+                    tagList = tag.strip().split(" ")
+                return split.strip(), tagList, mentionList
+                """
                 #print len(translations['translated'])
                 #print string
-                
-
-
+                """   for YoHuan """
 
 #############        output        #############
 #############        output        #############
