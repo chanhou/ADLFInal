@@ -1,0 +1,2272 @@
+O O O O O O O O O
+O O O O O O O O O O O O O O
+O O
+O O O O O O O O O O O O O
+O O O O O O O
+O O O O O O O
+O O O O O O O O O O O B-area_CITY O O O O B-time_INTERVAL I-time_INTERVAL I-time_INTERVAL
+O O O O O O O O O O O O O O
+O O O O O O O O O
+O O O O O
+O O O O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O
+O O
+O O O O O O O O
+O O O O O O O O O O
+O O O O O O O O O O O O O
+O O O B-fee_SERVICES O B-fee_SERVICES O O O O O O O O O
+O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O O O
+O O O O O O O O O O B-loc_HOTEL
+O O O O O O B-area_CITY O B-area_CITY O O O O
+O O O O O O O O O B-fee_SERVICES O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O O O O O
+O O O O O O B-food_MAIN O O O O O O O O O B-loc_HOTEL O
+O O O O O O O B-food_MAIN
+O O B-food_MAIN O O O O O B-loc_HOTEL O O O O O O
+O O O B-fee_SERVICES O B-fee_SERVICES I-fee_SERVICES
+O O O O O
+O O O O O B-food_MAIN O
+O O
+O O O
+O
+O O O O O O B-fee_SERVICES I-fee_SERVICES O O O O O O O O
+O O O O O B-fee_SERVICES I-fee_SERVICES O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O O
+O I-fee_SERVICES I-fee_SERVICES O
+O
+O O
+O O O O
+O O O O O O O O O O B-area_CITY O O O O B-area_CITY O
+O O O O O O O O O O O O B-area_CITY O O O O
+O O O
+O O O O O O
+O O O O O O
+O O O O O O O O O
+O O O O O B-loc_ROAD O O O O O O O O O O O O B-area_CITY
+O O O O O O O O O O O O O O O O O O
+O O
+O O B-loc_ROAD I-loc_ROAD O O O O O O O
+O O O O B-loc_ROAD I-loc_ROAD O O O O O O O O O O O O O
+O O
+O O O O O O O O O O O O B-area_CITY I-area_CITY
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O O B-trsp_MAIN I-trsp_MAIN O
+O O O O O O O O O O
+O O O O O O O
+O O O O O O O O O O O O O O
+O O
+O O
+O O
+O O O O O O O O O
+O O O O O O B-area_CITY O O O O O O O O O O O
+O O O O O O O B-loc_ATTRACTION O O O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O O O O O O O O O O O O O
+O O O O O
+O O O O
+O O O O B-loc_ATTRACTION
+O O O O O O O O O O O
+O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O
+O O
+O O
+O O O O O O O O O O O O O O O O O
+O O O O O B-loc_HOTEL O O O O O O O O O B-det_PRICE I-det_PRICE O O O
+O O O O O O
+O O O O O B-loc_HOTEL O O O O
+O O
+O O O O O O O O O O O O O O O O
+O O
+O O O O O O O
+O O O O O O O
+O O O O O O O O
+O I-loc_HOTEL I-loc_HOTEL O O O O O O B-area_CITY O O O O O O
+O O
+O O O O O O B-loc_HOTEL O
+O O O O O O O B-loc_HOTEL O B-area_CITY O O O O O
+O O O O O O O O O O O B-loc_HOTEL O
+O O O O O O O B-loc_HOTEL O O O
+O O O O
+O O O O
+O O B-loc_HOTEL O O O O O O O O
+O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O B-loc_HOTEL
+O O O O O O O O O O O O O O O O O O
+O O
+O O O O O O O O
+O O O O O O O
+O O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O O O
+O
+O O O O O O
+O O O O O O O O O B-time_INTERVAL O O O
+O O O B-time_INTERVAL O O O O B-det_EVENT O
+O O
+O O
+O O
+O O
+O O O
+O O
+O O
+O O O O O
+O O O B-loc_HOTEL O
+O O O O O O O O
+O O B-time_INTERVAL O O O O O O O
+O O O O
+O O
+O O O O O O O O O O O B-time_INTERVAL
+O O O O O B-det_EVENT I-det_EVENT I-det_EVENT I-det_EVENT O O O O O O B-det_EVENT
+O B-loc_HOTEL O
+O O O O
+O O O O O O
+O O O O O B-time_DATE I-time_DATE I-time_DATE I-time_DATE O
+O O O O B-det_EVENT I-det_EVENT I-det_EVENT O
+O O O O
+O O B-loc_HOTEL O O O O O O O O O O
+O O O O O O O B-time_DATE O
+O O O O O B-time_DATE O B-time_DATE O
+O O B-time_DATE O O O
+O O O O
+O O O O O O O O O O
+O O O O O O O B-time_INTERVAL O O O
+O O O O
+O O O O O O
+O O O O O
+O O O O O O B-loc_HOTEL O O O B-trsp_MAIN I-trsp_MAIN
+O O O O O O O O O O O O O B-det_EVENT O
+O O
+O O O O
+O O
+O O
+O O O O O O O B-det_PRICE I-det_PRICE O O O O B-time_INTERVAL I-time_INTERVAL I-time_INTERVAL O
+O O O O O O O O O O O
+O O O O O O O O O O O
+O O
+O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O B-fee_SERVICES I-fee_SERVICES O O
+O O O O O O O O O O O
+O O
+O O
+O O O O B-loc_HOTEL O O O O O O O O O O B-food_MAIN O O O
+O O B-loc_HOTEL O O O O O O O O O O O O
+O O O O O O
+O O
+O O
+O O O O O
+O O
+O O O O O
+O O O O O O O O B-loc_HOTEL O
+O O O O O O O O O
+O O O O B-loc_HOTEL O O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O B-loc_HOTEL O O O O O O O O O
+O O
+O O
+O O
+O O O O
+O O O O O O O O O O B-loc_HOTEL O
+O O O O O O B-loc_HOTEL O O O O O O O O
+O O O O O O O O O O O
+O O O O O
+O O
+O O
+O O O O O O O O O O O O
+O I-fee_SERVICES O O O O
+O O O O O O O O O O O O O O O O O O O B-loc_HOTEL
+O O
+O O O O O O
+O O O O O O O O
+O O O O O O O O
+O O O O
+O O O O O O O O O O O O
+O O O O O O O O
+O O O O O O
+O O
+O O
+O O O O
+O O O O O O O O O O O O O O B-loc_HOTEL O
+O O O O O O O
+O O O O O O O B-loc_HOTEL O O O O O O O O O O O O O
+O O O O O O O O O O
+O O
+O O
+O O
+O O O O O O B-loc_HOTEL O O O O O O B-area_CITY I-area_CITY
+O O O O O O O O O O O B-loc_SHOP O O O O
+O O O O O B-loc_ROAD I-loc_ROAD O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O
+O O O O O O
+O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O
+O O
+O O O O O
+O O O O O O O O
+O O O O O O O O
+O O
+O O O O O O O
+O O O
+O O
+O O O O O O
+O O O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O
+O O O B-loc_ROAD I-loc_ROAD O O O O O O
+O O
+O O O O B-loc_ROAD I-loc_ROAD O
+O I-loc_ROAD O O O
+O B-loc_ROAD I-loc_ROAD O
+O B-loc_ROAD I-loc_ROAD O O O O B-area_CITY I-area_CITY O O
+O O O O O O O B-det_ACCESS O O O O B-trsp_TYPE I-trsp_TYPE O O B-area_CITY O
+O O O O O B-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O O B-trsp_STATION I-trsp_STATION O
+O O O O O B-trsp_STATION I-trsp_STATION I-trsp_STATION I-trsp_STATION I-trsp_STATION I-trsp_STATION O
+O O
+O O
+O O
+O O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O O O
+O O
+O O O O
+O O O O O O O O O O O O B-loc_AIRPORT O O B-loc_HOTEL O O O
+O O O O O O O O O O O O O O O O O
+O O
+O O O
+O O O O O O
+O O O O O B-loc_AIRPORT I-loc_AIRPORT O
+O O O O O O O O O O O O O O O O O O O
+O O O O
+O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O O O O
+O O
+O O
+O O O O O O O O O O O B-trsp_MAIN I-trsp_MAIN
+O O O O O O
+O O B-trsp_MAIN I-trsp_MAIN O O O O O B-trsp_STATION O O O
+O O O O O O O O O
+O O O O O O B-loc_AIRPORT I-loc_AIRPORT O O B-loc_HOTEL O O O
+O O
+O O O O
+O O
+O O O O O O O O O B-trsp_MAIN I-trsp_MAIN O
+O O O
+O O O O
+O O O O O O O
+O O
+O O O O O O O O O O O O
+O O O O O B-trsp_STATION I-trsp_STATION O O O O O O O O O
+O O O O O O O O
+O O
+O O B-loc_AIRPORT I-loc_AIRPORT O O B-trsp_TYPE I-trsp_TYPE O O B-trsp_STATION I-trsp_STATION
+O O O O O O O O O B-loc_HOTEL O O O O O B-trsp_STATION O
+O O O B-trsp_STATION O O O O O O O O O O B-trsp_STATION O
+O O
+O O O O
+O O O O O O O O O B-loc_AIRPORT
+O O O O O O O O
+O O O O O O O B-trsp_TYPE O
+O O
+O O O O O O O O O O O O O O O O
+O O O O
+O O O O O
+O O O O O B-trsp_STATION I-trsp_STATION O O O O O B-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O O
+O O O O O O O O O O O B-trsp_TYPE O B-trsp_STATION O
+O B-trsp_STATION I-trsp_STATION O O O
+O O O O O
+O B-trsp_STATION I-trsp_STATION O B-trsp_STATION O O O
+O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O
+O O O O O O O
+O O O O O O O O B-trsp_MAIN I-trsp_MAIN O
+O I-trsp_MAIN O O B-trsp_MAIN I-trsp_MAIN O O
+O O O O
+O O
+O O
+O O O O O O O O
+O O O O O O O O O O O B-trsp_STATION O
+O O O B-loc_AIRPORT O B-trsp_STATION
+O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O
+O O
+O O O
+O O O O O O B-trsp_TYPE O O O
+O O O O O O O O O O
+O O O O O O O B-area_CITY O O O O O O O O O
+O O O O O B-trsp_STATION O O O O O O O
+O O O O O O O O O O O O O O O O O B-trsp_STATION
+O O O O O O O O O O O O O O O O O O
+O O O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES
+O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O O
+O O O O
+O O
+O O O O
+O O O O O O O O
+O O O O O O O B-trsp_TYPE O O O O
+O O O O O O O O O O O O
+O O O O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O O O O O B-fee_SERVICES I-fee_SERVICES O O B-time_INTERVAL I-time_INTERVAL O
+O O O O O O O O O O O
+O O O O
+O O
+O O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O O O B-trsp_TYPE O O O O O
+O O O O O B-time_INTERVAL I-time_INTERVAL O O O
+O O O O O O O
+O O
+O O O O O
+O O
+O O O O O O O O O O O O O O B-trsp_TYPE
+O O O
+O O O O O O O O O O O O O O O O O O
+O O
+O B-trsp_TYPE I-trsp_TYPE O O B-time_START I-time_START O O O
+O O B-trsp_TYPE O O O O B-time_END I-time_END O
+O O O O
+O O O O O
+O O O O O O O O
+O O O O O
+O O
+O O
+O O O O O O B-trsp_TYPE O O O O O O
+O O O O O O B-loc_HOTEL O O B-trsp_STATION O
+O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O
+O O
+O O
+O O O O
+O O O O O O O O O O O
+O O O O O O O O O B-loc_SHOP O O O O O O O O
+O O
+O O O O O O
+O O
+O O O O O O O O B-loc_HOTEL O O O O O B-loc_SHOP I-loc_SHOP O
+O B-loc_SHOP I-loc_SHOP O O O O O B-loc_SHOP I-loc_SHOP O B-area_CITY O
+O O O O
+O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O B-loc_SHOP O O O
+O O O O O O O O O O O O
+O O O O B-loc_SHOP I-loc_SHOP O
+O O O O O O O B-loc_SHOP I-loc_SHOP O O O O B-loc_ATTRACTION O O O O
+O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O O O O O O
+O O B-loc_SHOP I-loc_SHOP O O O O O O O O O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O
+O O
+O O O O
+O O
+O O O O O O B-loc_SHOP O O O O O B-loc_SHOP I-loc_SHOP O O
+O O O O
+O O O O
+O B-loc_SHOP I-loc_SHOP O O O B-loc_SHOP I-loc_SHOP O
+O O O O O B-loc_SHOP I-loc_SHOP O
+O O
+O I-loc_SHOP O
+O O O O O O O B-trsp_TYPE O O O B-loc_SHOP I-loc_SHOP I-loc_SHOP O
+O O O O O O O O O O O O O O
+O O O O
+O O
+O O O O
+O O O O O O O O O O O O
+O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O O B-loc_ROAD I-loc_ROAD O
+O O O O O O O O O O O O O O O O O
+O O O O O O O O O O O O
+O O O B-area_CITY O O
+O O
+O O O O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O O O
+O O O O O O O B-loc_TEMPLE I-loc_TEMPLE I-loc_TEMPLE O
+O O O O O O O O O
+O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O
+O O
+O O O O O O O O O O O O
+O O O O O
+O O
+O O O O B-loc_EDUCATION I-loc_EDUCATION O O O
+O O O O O O O B-det_HISTORY I-det_HISTORY
+O O O O O O O O B-det_HISTORY I-det_HISTORY O O O O O B-loc_TEMPLE I-loc_TEMPLE I-loc_TEMPLE
+O O O O O B-loc_TEMPLE I-loc_TEMPLE O O O O O O
+O O O O B-loc_TEMPLE O O O O B-loc_TEMPLE I-loc_TEMPLE
+O O O O O O O O B-loc_TEMPLE O O O
+O O
+O O
+O O O O O O O O O O O B-det_ACCESS O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O
+O O O O O O O O
+O O O O O O O O O O
+O O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O O O O O
+O O O O O O O O B-food_MAIN
+O O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O B-food_MAIN O O O O
+O O O
+O O O O O O O O O O O O O O O O O
+O O O O O O O O O O
+O O
+O O O O
+O O O O O O O O O O O O O O O O O O
+O O
+O O O O O O
+O O O O B-food_MAIN O O O O
+O O O O
+O O O
+O O O O O O B-food_MAIN O O O O O O O
+O O O O B-food_MAIN O
+O O O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT
+O O O O O O O O B-fee_PRODUCTS I-fee_PRODUCTS O
+O O O O O O O O O O O B-food_MAIN I-food_MAIN O
+O O
+O O
+O O O O O O O O O O O O O O O O O O
+O O O B-loc_RESTAURANT O O O O O O O O O O O B-area_CITY O O O O B-food_MAIN I-food_MAIN O
+O O O O O B-food_MAIN I-food_MAIN I-food_MAIN O O O
+O O
+O O
+O O B-food_MAIN I-food_MAIN I-food_MAIN O O O B-food_MAIN I-food_MAIN I-food_MAIN O
+O I-food_MAIN I-food_MAIN O O O
+O O O O
+O O O B-food_MAIN I-food_MAIN I-food_MAIN O
+O O B-food_MAIN I-food_MAIN I-food_MAIN O O O O O O O O O O O B-loc_HOTEL
+O O O O O O B-food_MAIN I-food_MAIN I-food_MAIN O
+O O O O O O O O O O
+O O O O O O O B-loc_HOTEL O O O O B-trsp_STATION O
+O O O O O O O O O
+O O O B-loc_ROAD I-loc_ROAD O B-loc_ROAD I-loc_ROAD O
+O O O O O O O
+O O O O O O O O
+O O O O O
+O O O B-loc_ROAD I-loc_ROAD O B-loc_ROAD I-loc_ROAD O
+O O
+O B-loc_ROAD I-loc_ROAD O O O O O O O
+O O O O O O O O O O O
+O B-loc_ROAD I-loc_ROAD O O O O O O O O
+O O
+O O
+O O
+O B-food_MAIN I-food_MAIN I-food_MAIN O O O O O O O O O O O
+O O O O
+O O O
+O O
+O O
+O O O O O O B-food_MAIN I-food_MAIN I-food_MAIN O O O
+O O O O O O O O O O
+O O O O O O O O O O O O
+O O O O O O B-fee_PRODUCTS I-fee_PRODUCTS O
+O O O O
+O O O O O O O
+O O
+O O O O O O O B-food_MAIN O O O B-fee_PRODUCTS I-fee_PRODUCTS
+O O O O O B-fee_PRODUCTS I-fee_PRODUCTS O B-fee_PRODUCTS I-fee_PRODUCTS O O O
+O O O O O O
+O O O O
+O O O O O O O O O O
+O O O O O O O O O O B-food_MAIN O O O O O O
+O O
+O O O O
+O O
+O O O O O O O O O O O O O O O O O O O O O O
+O O
+O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O
+O O O O O O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O B-time_MAIN I-time_MAIN O
+O I-time_INTERVAL I-time_INTERVAL O B-time_INTERVAL I-time_INTERVAL I-time_INTERVAL O O O
+O I-time_INTERVAL O O
+O O O O
+O O
+O O B-time_OPEN I-time_OPEN O
+O O O O O O O
+O O O O O O O O O O O O B-loc_ATTRACTION O
+O O O O O O O O O O O O B-loc_ATTRACTION O O
+O O O O B-trsp_STATION O
+O O
+O O B-trsp_STATION O O O O O O O O O O O
+O O O O O B-trsp_TYPE I-trsp_TYPE O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O
+O O O O O O O B-trsp_TYPE O O O O B-trsp_STATION O O
+O O O O O O O O O O O O O O O O O
+O O B-loc_HOTEL O B-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O
+O O O
+O O
+O O O O O O O O O
+O O O O O O B-trsp_TYPE I-trsp_TYPE O
+O O
+O O B-trsp_TYPE I-trsp_TYPE O O O O O O O
+O O O B-loc_HOTEL
+O O O O O O
+O O
+O O B-trsp_TYPE O O O O O O O B-trsp_STATION O
+O O O O O O O O O O O O O O O O O
+O O O O O B-trsp_TYPE I-trsp_TYPE O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O O O B-trsp_TYPE O O O O O O
+O O O
+O O
+O I-loc_ATTRACTION O O O
+O O
+O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O B-loc_ATTRACTION O
+O O O O
+O B-loc_ATTRACTION I-loc_ATTRACTION O O B-loc_ATTRACTION O
+O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O B-loc_ATTRACTION O
+O O O O
+O O
+O O O O O O O O O O O O O O
+O O
+O O O O O O B-loc_ATTRACTION O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O O O B-loc_ATTRACTION O
+O O
+O O O O O O O O O O O O O O O O
+O O O
+O O O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O O O O O O O O O O
+O O O O
+O O O O O O O O
+O O O O O O O O O
+O O O O O O O O O O
+O O O O O O O O O
+O
+O O O
+O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O
+O O O O O O O O B-trsp_TYPE O O O O O B-loc_SHOP
+O O O O O O B-trsp_TYPE I-trsp_TYPE O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O
+O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O O O O O O
+O O O O O O O O O O O
+O O O O O O O O O O B-area_DISTRICT
+O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O
+O O
+O O
+O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O O O B-loc_HOTEL
+O O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O
+O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O O O O O O O O O O
+O O O O O O O O B-area_CITY
+O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O
+O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O O O
+O O O O O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O O
+O O O O
+O O O O O O O O O O O O O O O O O
+O O O O O O B-loc_HOTEL O
+O O O O
+O O
+O
+O O
+O O O O O B-loc_HOTEL O O
+O O O O
+O O O B-loc_HOTEL O O O O
+O I-loc_HOTEL I-loc_HOTEL O O O
+O O
+O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O
+O O
+O O
+O O O O O O B-loc_HOTEL O O O O O B-loc_HOTEL O
+O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O
+O O O O B-trsp_MAIN O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O O O O O O O O O
+O O O O O O O
+O O
+O O
+O O
+O O O O O
+O O O O O O O O O
+O O
+O O
+O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O
+O O O O O O O O O O O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O
+O O
+O O
+O O O O O O O O O O O
+O O
+O O O O
+O O O O O O O O O O O O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O
+O
+O O O O O
+O O O O O O O
+O O
+O O
+O O O O O O O O O O
+O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O B-time_DATE I-time_DATE I-time_DATE
+O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O O O O O
+O O O O O B-time_INTERVAL O
+O O O B-time_INTERVAL O O O O O O O O O O B-time_INTERVAL O O
+O O O O O O O O
+O O O O O O O O O B-fee_ATTRACTION I-fee_ATTRACTION I-fee_ATTRACTION O
+O O
+O O O O O
+O O B-time_INTERVAL O
+O O
+O O
+O O O
+O B-fee_ATTRACTION I-fee_ATTRACTION I-fee_ATTRACTION O
+O I-fee_ATTRACTION I-fee_ATTRACTION O O O O
+O O
+O O
+O O
+O O O O O O O O O O
+O O O O B-fee_ATTRACTION I-fee_ATTRACTION O B-fee_ATTRACTION I-fee_ATTRACTION I-fee_ATTRACTION O O O
+O O O O O O O O O O B-det_ACCESS I-det_ACCESS O B-fee_ATTRACTION I-fee_ATTRACTION O
+O O
+O O O O O O O
+O O O O O O O
+O O B-det_ACCESS I-det_ACCESS O O O O O O O O O O O
+O B-det_ACCESS I-det_ACCESS O O O O O O O O O O
+O O O O O O B-loc_ATTRACTION O O O O O
+O O
+O O
+O O O
+O O O O O O O O O O O O O
+O O O O O O B-fee_ATTRACTION I-fee_ATTRACTION
+O O O O O O O O O O O O O O O
+O O O O O O O O B-fee_ATTRACTION I-fee_ATTRACTION O O O O
+O O O O O O O O O O O
+O O O O O O
+O O O O
+O O O O O O
+O O O B-fee_ATTRACTION I-fee_ATTRACTION O O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O O O O
+O O
+O O
+O O O O O B-det_PRICE O O O O O O
+O O O O
+O O
+O O O O O O O O O
+O O O B-time_INTERVAL O O O O O O
+O O O O O O O O O O O O
+O O O O O O O
+O O O O
+O O O O O O O O O
+O O O O B-time_INTERVAL O B-time_INTERVAL O O O O O O O O O
+O O O O O O
+O O O O O O B-time_DATE I-time_DATE I-time_DATE I-time_DATE O
+O O O O B-det_EVENT I-det_EVENT O
+O O O O
+O O O O O
+O O O B-det_EVENT I-det_EVENT O B-area_CITY O
+O O
+O O O O B-time_INTERVAL I-time_INTERVAL O O B-det_EVENT I-det_EVENT O
+O O O O B-det_EVENT I-det_EVENT O
+O O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O O
+O O O O
+O O
+O O O O O
+O O O O O O O O O O O O
+O O O O O O O O
+O O O O O O O O O O O
+O O O O O B-time_INTERVAL I-time_INTERVAL O O O
+O O O O O O O O
+O O
+O O O O O O O O O O
+O O O O O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O
+O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O
+O O O O O
+O O O O
+O O O O O O O O O O B-det_EVENT I-det_EVENT O
+O O O O O O O O
+O O
+O O O O O O O O O O
+O O O O O O O O O
+O O O O O B-fee_ATTRACTION I-fee_ATTRACTION O O O O O B-fee_ATTRACTION
+O O O B-fee_ATTRACTION I-fee_ATTRACTION I-fee_ATTRACTION I-fee_ATTRACTION O
+O O O O
+O O O O O O O O O
+O O O O
+O O O O O O O O O O O
+O O
+O O
+O O O O O O O O O O
+O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O O O O O O O O O O O O O
+O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O B-loc_ATTRACTION I-loc_ATTRACTION O O
+O O O O O O O
+O O O O
+O O O B-loc_ATTRACTION O O O O O O B-loc_MAIN I-loc_MAIN O O O
+O O O B-loc_MAIN I-loc_MAIN O O O
+O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O O O O O
+O O O O B-loc_RESTAURANT O O O
+O O O O O
+O O O O
+O O
+O O
+O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O I-loc_ATTRACTION O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O O O O O O O O O O
+O
+O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O
+O O
+O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O
+O O O O
+O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O
+O O
+O O O O O O O O O O O O O O
+O O
+O O O O O
+O O
+O O
+O O O O B-loc_ATTRACTION O O O O
+O O O O O O
+O O O O O O O O O O
+O O
+O
+O O O O O O O O
+O O O O O O O
+O O
+O O O O O O O O O O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION
+O
+O O O O
+O O O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O O O
+O
+O O O O O O O O
+O O O O O O O O O O O O
+O O
+O O
+O O O O O O
+O O O
+O O O O O O
+O O O O O O O O O O O O O O O O
+O O O O O O O
+O
+O O O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O
+O O O O O O O
+O
+O O O O B-loc_ATTRACTION O O
+O O O
+O O
+O O O O O B-loc_ATTRACTION O O O
+O O
+O B-loc_ATTRACTION O O O O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O O O
+O O
+O O O O O
+O
+O O O O O O O O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O
+O O O O
+O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O O O O O
+O O O O O O
+O O O O O O O
+O O
+O O
+O O O O O O O
+O O
+O
+O O
+O O
+O O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O O
+O O O O O O O O O O O O
+O O
+O O O O O O O O O O O O O
+O
+O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O
+O O O O O O O O O O O O
+O O O O
+O O O O
+O O O O O B-area_CITY O O O O O O O O
+O O O O O O O
+O O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O
+O O O O O O
+O O O O O O O O O O O B-loc_ATTRACTION O
+O O
+O O O B-loc_ATTRACTION O O O O O O O B-trsp_TYPE I-trsp_TYPE
+O O O B-trsp_STATION I-trsp_STATION O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O O O
+O O
+O O O O O O O O O O O O O O O O O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O O O B-time_MAIN O B-time_MAIN I-time_MAIN O O O
+O O O O O O O O O O O O O O B-loc_ATTRACTION
+O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O O O O
+O O O O O B-time_START I-time_START O B-time_END I-time_END O O O O
+O O O O
+O O
+O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O O O O B-trsp_STATION I-trsp_STATION O
+O O B-trsp_STATION I-trsp_STATION O O O O O O O O O O O
+O I-loc_ATTRACTION O
+O O
+O O O O
+O O
+O O O B-fee_ATTRACTION I-fee_ATTRACTION O O
+O O O O O O O O
+O O
+O O
+O O O O O O O O O O B-loc_ATTRACTION O
+O
+O O
+O O
+O O O O O O O O O O O B-time_MAIN I-time_MAIN O O O O O
+O O O O O O O O B-loc_SHOP O O O
+O O O O O O O O
+O O
+O O
+O O O O O O O O O O O O O O O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O
+O O O O O O O O O O O O O B-loc_HOTEL O
+O O O O O O B-loc_HOTEL O O O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O B-loc_WATERSIDE O
+O O O O O O O O O O
+O O O O O O O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O
+O O
+O O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O O O O O O O O O O
+O O O O O O O O O O O O O O O O O O O O O O O O O O
+O O
+O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O I-loc_HOTEL I-loc_HOTEL O O O O O O O O O O O
+O O O O O O O O O O
+O O O O
+O O
+O O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL
+O O O O O O O
+O O
+O O
+O O O O O O O O O O O O
+O O
+O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O
+O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O O O O O B-loc_HOTEL O
+O O O O O O O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O
+O O O O O O B-loc_HOTEL O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O O O
+O O O O O O O O O O
+O O O O O O O O
+O O O O O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL
+O O O O O O O O O O O O O B-loc_HOTEL O
+O O
+O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O B-trsp_MAIN I-trsp_MAIN O O
+O O O B-trsp_MAIN I-trsp_MAIN O O O O O O B-trsp_MAIN I-trsp_MAIN
+O O O O O
+O O O B-trsp_TYPE I-trsp_TYPE O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O O
+O O
+O O
+O O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O O
+O O O O O O O O O
+O O O B-trsp_MAIN I-trsp_MAIN O O O
+O O O B-trsp_MAIN I-trsp_MAIN O
+O O O O
+O I-trsp_MAIN B-trsp_STATION O
+O O
+O O O O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O
+O O O O O B-trsp_MAIN I-trsp_MAIN B-trsp_STATION O
+O O
+O O B-trsp_STATION O O O O
+O O
+O O O O
+O O B-trsp_STATION O B-trsp_STATION O O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL
+O O O O
+O O O O O
+O O
+O O
+O O
+O O O O O O B-det_ACCESS O B-trsp_TYPE O O O B-loc_HOTEL O
+O O
+O O
+O O O O O O O O O O O O
+O O
+O O O O O O B-trsp_MAIN O O O B-area_CITY O O O O
+O O O B-trsp_MAIN O
+O O O O O O O
+O O O B-time_INTERVAL I-time_INTERVAL O O O O O O
+O O
+O O O O O O O O O B-time_INTERVAL O O O B-time_START I-time_START
+O O O O B-time_END I-time_END I-time_END O
+O O O O O O O O O O B-time_START O O B-time_INTERVAL
+O O O O O O B-time_MAIN I-time_MAIN O
+O O O O
+O
+O O O O B-time_END I-time_END O
+O O O O
+O O O O
+O O
+O O
+O O
+O O O O O O O O O O O O O
+O O O O O O
+O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O O O O B-loc_SHOP I-loc_SHOP I-loc_SHOP
+O O O O O O O O O O O
+O O O O
+O O
+O O O O
+O O
+O O O O O O O O O O O
+O
+O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O B-area_CITY O
+O O
+O O O O O O O O O O O O
+O O O O O O O
+O O O O O O O O O O O O O O
+O O
+O O O O O
+O O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O
+O O
+O O O O O
+O O O O O O
+O O
+O O
+O O O O O
+O O O
+O O O O O O
+O O O O O O O
+O O O
+O O O
+O O O O O O O
+O O
+O O O O O O O
+O O O O
+O O O O O O O O
+O O O O O O O O O O O O O O O O O
+O O O O O O O O O B-area_CITY
+O B-time_DATE I-time_DATE I-time_DATE I-time_DATE O
+O O O O B-det_EVENT O O B-area_COUNTRY O O O O
+O O O O O O O O
+O O O O O O O O O O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O O O
+O
+O O
+O O O O O O O O O O O
+O O O
+O O O O O
+O O
+O O O O O O O O
+O O O O O O O O
+O O O O O O B-area_CITY
+O I-time_DATE I-time_DATE I-time_DATE I-time_DATE
+O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES
+O O O O O O O O O O O O O O O
+O B-area_CITY I-area_CITY
+O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O O O O O O O O O O O O O
+O O O O O O O O B-area_CITY O
+O O O O O O O O O O O
+O O O O O O O O B-loc_SHOP O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O B-det_NATURE O
+O O O O
+O O O O
+O O O O
+O O O O
+O O B-area_CITY O O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O
+O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O
+O O O O
+O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O O O O O O O O O O O O O O O O O O O O O O
+O O O O B-area_CITY O O O
+O O O O O O O
+O O
+O O O O O O O
+O O O O O O O B-area_CITY O
+O O O O O O O
+O O
+O O
+O O O O O O O O O O O O O O O O O O
+O O O O B-area_CITY O O O O O
+O O O
+O O
+O O O O O O O
+O O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O
+O O O O O O O
+O O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O B-loc_ATTRACTION O
+O O O O O O O
+O O
+O O O B-loc_ATTRACTION O O O
+O O O O
+O O O O O O O O O O O O O O O O
+O O O O O O O
+O O
+O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O
+O B-loc_ATTRACTION O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O
+O O O O O
+O O O O O O
+O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O O O
+O O O O O O O O O O O B-area_CITY O O O B-time_DATE O
+O O O O B-area_CITY O O O O O O O O O O
+O O O O O O O O O O O B-det_NATURE I-det_NATURE O
+O O O O O O O O O O
+O O O O O O O B-det_MAIN O
+O O
+O O O B-det_MAIN O
+O O
+O O
+O O O O O O B-det_MAIN O
+O O O O O O O O O B-food_MAIN I-food_MAIN O
+O O O O B-food_MAIN I-food_MAIN O O O
+O O O O O O O O O O O B-loc_RESTAURANT O O B-food_MAIN I-food_MAIN O
+O O O O O O O O
+O O O O O B-loc_RESTAURANT O O
+O O O O O O O O O O
+O O O O O O O O O
+O O
+O O
+O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O B-loc_ATTRACTION O
+O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION O
+O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION I-loc_ATTRACTION O O O
+O O
+O O O O
+O O
+O O O O O B-area_CITY O O B-loc_HOTEL O O O O O O O O O O O O O O
+O O O O O O O O O O
+O O B-loc_HOTEL O O O O O B-loc_CULTURAL I-loc_CULTURAL I-loc_CULTURAL
+O O O O
+O O
+O O O
+O O O O O O O
+O O O O O O
+O O B-loc_HOTEL O O O O O O O O O O O B-loc_HOTEL
+O O O
+O O O O O O O O O O O O O O O O
+O O O O O O O O O
+O O O O O O O
+O O
+O O O O O O
+O O O O O O
+O O O O O O B-loc_HOTEL O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL
+O O O O O O O O O O O
+O O
+O O O O
+O O O O
+O O
+O O O O O O O O O B-loc_HOTEL O O O O
+O O
+O O O O
+O O O O O O O
+O O
+O O O O B-area_CITY O O O
+O O O
+O O O O
+O O O O O B-area_CITY O O B-time_INTERVAL I-time_INTERVAL I-time_INTERVAL O
+O
+O O O O
+O O O O O
+O O O O O O
+O O O O O O O O B-area_CITY O
+O O O
+O O O
+O O O
+O O O O O
+O O O O
+O O
+O O
+O O B-time_DATE I-time_DATE I-time_DATE O
+O B-time_DATE O O
+O O O O O O O O O O O O
+O I-time_DATE O B-time_DATE I-time_DATE I-time_DATE I-time_DATE
+O O O
+O O O B-time_DATE B-time_DATE I-time_DATE O O O
+O O
+O O O O
+O O O O B-time_INTERVAL I-time_INTERVAL O
+O O B-time_INTERVAL I-time_INTERVAL O
+O O O O O O B-fee_SERVICES O O O O O O O
+O O
+O O
+O O
+O O O O O
+O O O B-loc_HOTEL I-loc_HOTEL B-fee_SERVICES O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O
+O O O O O O O O O
+O O O O
+O O
+O O O O
+O O
+O O B-loc_HOTEL O O O O O O
+O O O O O O O O O O
+O O O O
+O O O O O O O B-loc_HOTEL O
+O O O O O
+O O
+O O O O O
+O O O O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O B-time_INTERVAL I-time_INTERVAL O
+O O O O O O O O O O O O O
+O O O O O O B-loc_HOTEL O O O O O
+O O O O O O O
+O O O O
+O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O
+O O
+O O O O O O O O O O O O O
+O O O O O B-loc_ATTRACTION O
+O O O O O
+O O O O O O O O O O
+O O O
+O O O O
+O O O B-loc_ATTRACTION O O O O O O O O O
+O O O O
+O O
+O O O O O O O O O O B-loc_HOTEL O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O B-loc_HOTEL I-loc_HOTEL O O O O O B-food_MAIN O
+O O O O
+O B-food_MAIN O O O O O O O O O B-loc_HOTEL O O O O O
+O O O O O O O B-food_MAIN
+O O O O O O O O B-loc_HOTEL O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O B-food_MAIN O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O B-det_PRICE
+O O O O B-food_MAIN O O B-loc_HOTEL O
+O O O O
+O O O O
+O O B-loc_HOTEL O
+O O
+O O O O O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O B-loc_RESTAURANT O O O O O O O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O B-loc_HOTEL O O O O O O B-loc_RESTAURANT O
+O O O O O O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O O O B-loc_RESTAURANT O O O O
+O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O B-loc_HOTEL O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT O O B-loc_HOTEL O O O O O
+O O O O O O O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O B-area_CITY
+O O O O O O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O O O
+O O O O
+O O
+O O O O
+O O O O O O
+O O O O O O
+O O
+O O O O B-det_PRICE I-det_PRICE O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O B-time_INTERVAL I-time_INTERVAL O O O B-loc_HOTEL O
+O O O O O O O
+O I-fee_SERVICES I-fee_SERVICES O
+O I-time_INTERVAL O O O O
+O O O O
+O O O O O O O O O O O O O O O O O
+O O O O
+O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O O O O O O O O
+O O O O O
+O O
+O O
+O O O O
+O O O O O O O O O O O O O O O O O O
+O O O O O
+O O O O O O O O
+O O O O O O O
+O O O O O O O
+O O O O
+O O O O O O O O O O O
+O O
+O O O O
+O O O O O O O O O
+O O O O O O O O O
+O O
+O O O O O O O O O O O
+O O O O O O
+O O O O O O O
+O O
+O O O O O O O O O O O
+O O O O O O O O O O O O
+O O O O
+O O O O O O O O O O B-loc_HOTEL O O
+O O O O O
+O O O O O O O O
+O O O O O O O O O O O
+O O O O O
+O O O O O O B-loc_HOTEL O
+O O O O O O O O O O
+O O O O O O O
+O O O O
+O O O O
+O O
+O O O O
+O O O
+O O
+O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O
+O O O O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O O B-det_PRICE O O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O O O O O B-loc_HOTEL O O
+O O O O O O B-loc_HOTEL O O O
+O O O O O O B-loc_HOTEL O O O O O O B-det_PRICE O O O O O O O
+O O O
+O O
+O O O O
+O O B-det_PRICE B-loc_HOTEL O O O O O O O O O O
+O
+O O O O
+O O O O
+O O O B-area_CITY O
+O O O O
+O O O O
+O O O O O O O O O O
+O O O O B-loc_HOTEL O O O O O O O O O
+O O O O O O O O O B-fee_MAIN O
+O O O O O O O O
+O O
+O O O O O
+O O O O O
+O O
+O O O
+O O O O O B-area_DISTRICT O
+O O
+O O O O B-det_PRICE O O O O O
+O O O O
+O O O O O O O O O O
+O O O O O B-det_PRICE O O O O O
+O O O B-det_PRICE O O O O O O O O O O O O O
+O O
+O O O O
+O O O O O
+O O O O O O O
+O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O
+O O O O O O O O B-loc_HOTEL O
+O O O O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O B-loc_HOTEL O
+O O O O O O O O
+O O O O
+O O O O B-fee_SERVICES I-fee_SERVICES O
+O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O B-trsp_MAIN O
+O O O O O
+O
+O O O O B-trsp_MAIN O
+O O O O
+O O O O O O B-trsp_STATION I-trsp_STATION O
+O O
+O I-loc_HOTEL I-loc_HOTEL O
+O O O
+O O O O O O B-loc_HOTEL I-loc_HOTEL O O O
+O O
+O
+O O O O O O O O O O O O
+O O O O O O O O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O O O O O O O O O O O
+O O
+O O
+O O
+O O
+O O
+O O O O O O O O O
+O O O O O B-loc_HOTEL O O O O O O O
+O O B-loc_HOTEL I-loc_HOTEL I-loc_HOTEL I-loc_HOTEL O
+O O O O
+O O O O O O O B-trsp_STATION O
+O O O O
+O O
+O O
+O O O O O O B-trsp_TYPE I-trsp_TYPE O O O O O O O
+O O B-loc_HOTEL O
+O O O B-trsp_TYPE O O O B-loc_CULTURAL I-loc_CULTURAL
+O O O B-trsp_TYPE I-trsp_TYPE O
+O O O O
+O O
+O I-trsp_STATION I-trsp_STATION O
+O O O O
+O O O O B-trsp_STATION O O O O O
+O O O O O O
+O O O O O O O B-trsp_STATION I-trsp_STATION
+O O O O O O B-trsp_STATION O
+O O
+O O
+O O
+O O O O O B-trsp_STATION O O O
+O O O B-trsp_STATION O
+O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE
+O O O O O O O O O O O O
+O O O O B-det_PRICE O B-trsp_TYPE O B-trsp_TYPE O
+O B-trsp_TYPE O O O O O O O O
+O B-trsp_TYPE I-trsp_TYPE O O O O O O O
+O O O O O O O O O
+O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O
+O O O O
+O O O O
+O O O O
+O O
+O O O O O O
+O O O O B-trsp_MAIN I-trsp_MAIN O
+O O O O O O
+O O O O O O O O O
+O O O O O
+O O O O O
+O O O O O O O B-loc_HOTEL O O
+O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O
+O O O O O O O O O B-trsp_STATION I-trsp_STATION O
+O O
+O B-trsp_STATION I-trsp_STATION O O B-trsp_STATION O O O
+O O O O
+O O O B-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O
+O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O O O
+O O O O
+O O
+O O
+O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O
+O O O O O O O O O O O O
+O O O
+O O B-trsp_TYPE O O O
+O O
+O O O O O O O O B-trsp_TYPE I-trsp_TYPE I-trsp_TYPE O O
+O O O O
+O B-loc_AIRPORT I-loc_AIRPORT O O O O O B-loc_AIRPORT I-loc_AIRPORT O O
+O O O O
+O O O O O O O O O O O O
+O O
+O O B-loc_AIRPORT O O B-loc_AIRPORT I-loc_AIRPORT O
+O O O O O O B-trsp_TYPE O O O B-trsp_MAIN I-trsp_MAIN O
+O O O O O O O B-trsp_MAIN O O O
+O O
+O O O O O O O O
+O O O B-trsp_MAIN I-trsp_MAIN O O O
+O O
+O O
+O O O O O B-trsp_MAIN I-trsp_MAIN O O O
+O O O O
+O O O O O O O O B-trsp_STATION O
+O O O O
+O O O O O B-trsp_STATION
+O O B-trsp_MAIN I-trsp_MAIN O
+O O O O
+O O
+O O O O O O O O B-trsp_TYPE I-trsp_TYPE O B-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O B-trsp_STATION I-trsp_STATION
+O O O O O O O B-loc_AIRPORT I-loc_AIRPORT O
+O O O O
+O O
+O O O O O O O O O O O O O O B-trsp_TYPE
+O O O O O B-trsp_STATION O
+O O
+O O O O B-trsp_STATION O
+O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O
+O O O O O O O O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES
+O O O O O B-trsp_MAIN O
+O O O O O O O O O O O O O O O O O O B-trsp_MAIN
+O O O B-trsp_MAIN O O O O
+O O O O O O O
+O O O O
+O O
+O O
+O O
+O O
+O O O O O O B-trsp_STATION O
+O O O O O O O O O O B-trsp_STATION O O O
+O O O O O O O O B-trsp_STATION I-trsp_STATION O O O B-trsp_STATION I-trsp_STATION O
+O O O O O
+O O O O O O
+O B-trsp_STATION O
+O O
+O O O B-trsp_STATION I-trsp_STATION O O B-loc_HOTEL O
+O O O O O O O
+O O B-time_INTERVAL I-time_INTERVAL O O O
+O O O O
+O O O O
+O O O O O O O O O O O O O B-trsp_TYPE O
+O O O O O O B-trsp_TYPE O O
+O O O O O O O O O O O O O O O B-trsp_MAIN O
+O O O O
+O O B-trsp_STATION I-trsp_STATION O
+O O O O O O O B-trsp_TYPE O O O
+O O O O B-area_DISTRICT I-area_DISTRICT O
+O B-area_DISTRICT I-area_DISTRICT O B-loc_ROAD I-loc_ROAD O O O O B-area_DISTRICT I-area_DISTRICT
+O O O O O O O O O O O O O O O B-loc_HOTEL O O
+O O O O O O
+O O O O O
+O O
+O O O O O O O O O O B-loc_HOTEL O O O O O O O O O O O
+O O
+O O O O B-loc_HOTEL O O O O O
+O O
+O O O B-loc_CULTURAL I-loc_CULTURAL O O O O O O O O O O
+O B-loc_HOTEL O O O O B-loc_CULTURAL I-loc_CULTURAL O
+O O O O O B-loc_ROAD I-loc_ROAD O O O
+O B-loc_ROAD I-loc_ROAD O O O O O O O O B-loc_CULTURAL I-loc_CULTURAL O
+O O O O O O
+O O O O O O B-loc_SHOP I-loc_SHOP O B-det_MAIN O
+O O O O
+O O O O O O O O O O B-loc_SHOP O O O O O O
+O O O O O O O O O O O O O O O O O O O O O O
+O I-loc_SHOP O
+O O O O O O O O O B-loc_SHOP O O O
+O O O O
+O O O O O O O O B-det_PRICE O O
+O O B-loc_CULTURAL I-loc_CULTURAL O B-loc_ATTRACTION O
+O
+O O O O O O O
+O B-loc_CULTURAL I-loc_CULTURAL O O O O B-food_MAIN I-food_MAIN O
+O O
+O O B-loc_ATTRACTION O B-area_MAIN O
+O O O O O O O B-loc_ATTRACTION O
+O O O O O O O O O O O O O O O O B-loc_SHOP I-loc_SHOP O
+O B-loc_SHOP I-loc_SHOP O
+O O O O
+O O
+O O
+O O O O
+O O O O B-food_MAIN O O O B-loc_CULTURAL I-loc_CULTURAL
+O B-loc_CULTURAL I-loc_CULTURAL O O O O O
+O O
+O O B-food_MAIN O
+O O
+O O
+O O
+O O
+O O O O O O O B-loc_ATTRACTION O
+O O O O O O O O O O O O B-loc_ROAD I-loc_ROAD O
+O O O O O O O O
+O O
+O O O B-loc_ROAD I-loc_ROAD O O B-loc_ROAD O
+O O O O
+O O B-loc_ROAD I-loc_ROAD O O O O O O O O O O
+O O O O O O O O O
+O O O O
+O O O
+O O O O B-loc_ROAD O O B-food_MAIN O O O O O O
+O O O O O O B-food_MAIN O O O
+O O
+O O O O
+O O O O O O O O O O O
+O O O O
+O O O O O B-loc_HOTEL O O
+O O O O O O O O O O O O O O O O O O B-loc_ROAD I-loc_ROAD O
+O O O O B-loc_SHOP I-loc_SHOP O O O
+O O B-loc_SHOP I-loc_SHOP O O O O O B-food_MAIN O O O
+O B-food_MAIN O O O
+O O O O O O B-food_MAIN O O
+O O
+O O
+O O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O O O O O
+O B-loc_TEMPLE I-loc_TEMPLE I-loc_TEMPLE O
+O B-loc_TEMPLE I-loc_TEMPLE I-loc_TEMPLE O O B-loc_TEMPLE O O O O O O
+O O O O B-loc_TEMPLE I-loc_TEMPLE O
+O O O B-loc_TEMPLE O
+O O O O O O O O O
+O O O O O B-loc_EDUCATION I-loc_EDUCATION I-loc_EDUCATION O O O O O O B-loc_EDUCATION O
+O O O O O O O O O O O O O O O O
+O O
+O O O
+O O
+O O
+O O O O O B-loc_HOTEL O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O
+O O O O O O O B-loc_HOTEL O O O
+O O O O B-loc_TEMPLE I-loc_TEMPLE I-loc_TEMPLE O O
+O O B-loc_RESTAURANT I-loc_RESTAURANT O O
+O O O O O O O O O O B-food_MAIN I-food_MAIN O O O O
+O O O O O O B-food_MAIN O O O O O O O B-loc_SHOP I-loc_SHOP I-loc_SHOP
+O O O O
+O O
+O O O O
+O O O O
+O O
+O O
+O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O
+O O O O O O B-det_MAIN I-det_MAIN O O O O O O O O B-time_INTERVAL O
+O B-time_INTERVAL O
+O
+O O
+O O
+O O
+O O O O O O O B-time_INTERVAL O O O
+O O O
+O O O
+O O
+O O B-loc_HOTEL O O O O O O O O O O B-trsp_STATION I-trsp_STATION O
+O O O O O O
+O I-trsp_STATION O O B-loc_CULTURAL I-loc_CULTURAL O
+O O O O O B-det_MAIN O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O
+O O O O
+O I-loc_WATERSIDE O
+O O B-loc_WATERSIDE I-loc_WATERSIDE O O O
+O O O B-loc_ATTRACTION O O O O O O O O O O O O O
+O O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O O O O O O O B-loc_RESTAURANT O
+O O O O O
+O O O O O B-food_MAIN I-food_MAIN O O O O O
+O I-food_MAIN O O O O O O
+O O
+O O O O O O O O O O
+O O O O O O
+O B-loc_WATERSIDE I-loc_WATERSIDE O O O O O O O
+O O B-time_INTERVAL I-time_INTERVAL O
+O O O O
+O O O O O O O O B-food_MAIN O O O B-loc_ATTRACTION O B-det_MAIN I-det_MAIN O
+O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O O O O O B-food_MAIN I-food_MAIN I-food_MAIN I-food_MAIN I-food_MAIN
+O O O O O O O O O
+O O O O O O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O O O B-time_INTERVAL O O
+O O O O O O O O O O O O B-det_MAIN I-det_MAIN
+O O B-loc_WATERSIDE I-loc_WATERSIDE O O O O B-loc_ATTRACTION O O O
+O I-loc_ATTRACTION O O B-loc_WATERSIDE I-loc_WATERSIDE O O O
+O O
+O O O O O O O O O O O O O
+O O B-loc_RESTAURANT O O
+O O O O O O O O
+O O O O O O O O
+O O
+O O O
+O O O B-loc_RESTAURANT O O O O
+O O O O B-loc_RESTAURANT O
+O O O O O O O B-loc_RESTAURANT O O B-loc_RESTAURANT O
+O O O O O O O O O O O O O O
+O O O O O B-loc_RESTAURANT O B-loc_WATERSIDE I-loc_WATERSIDE O O O
+O O O O
+O O O O O O
+O O
+O O O O O
+O O O O O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O O O O O O O
+O O B-loc_ATTRACTION O O O O B-loc_RESTAURANT O O O B-loc_RESTAURANT O
+O O O O O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O
+O O O O
+O O O O O O O O O
+O I-loc_WATERSIDE O
+O O
+O O O
+O O
+O O O O O O O O
+O O O O O O O B-trsp_MAIN O O B-trsp_STATION I-trsp_STATION O
+O I-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O
+O O O O O O O O O
+O O O O O O O O O O O O
+O O B-loc_CULTURAL I-loc_CULTURAL O O O O B-loc_HOTEL O O O
+O O
+O O O O
+O O O O
+O O
+O O
+O O B-loc_CULTURAL I-loc_CULTURAL O O O O O O O B-trsp_TYPE O O O O O B-trsp_STATION I-trsp_STATION
+O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O B-loc_WATERSIDE I-loc_WATERSIDE B-loc_ATTRACTION O
+O O O O
+O O O O O
+O O B-loc_ATTRACTION O O O
+O O O
+O O
+O O O
+O O O O O O O
+O
+O O
+O O O O O O
+O O O O O O O O O O O B-loc_HOTEL
+O O O O O O O O O O O O
+O O O O O O O O O O O O B-trsp_TYPE I-trsp_TYPE O O O B-time_START I-time_START O O B-time_MAIN
+O O O B-trsp_TYPE O O O O O O B-time_END I-time_END O
+O O
+O O
+O O O O
+O O O O O O B-time_MAIN O
+O O O B-trsp_TYPE O O O
+O O O
+O O
+O O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O B-trsp_TYPE O
+O O B-trsp_TYPE O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O
+O O O
+O O O O B-time_MAIN O
+O O
+O O B-det_STROLL O
+O O O O B-det_STROLL O
+O O O O O O B-det_STROLL O
+O O O O O O O O O
+O O O O O O O O O O O O
+O O O
+O O O O
+O O O O
+O O O O O O O O O O O O O O O O
+O O O O O O O O
+O O O O O O O O O O O O
+O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O
+O O
+O O O O
+O O
+O O O B-loc_HOTEL O O O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O O O
+O O O
+O O O O O O O O
+O O
+O O O O O O O O O
+O O O O O B-trsp_TYPE I-trsp_TYPE O O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O O O
+O
+O O O O
+O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O O B-trsp_STATION I-trsp_STATION O
+O O O B-loc_WATERSIDE I-loc_WATERSIDE B-trsp_STATION I-trsp_STATION O
+O O O O O O O O O O
+O O O
+O B-trsp_STATION I-trsp_STATION O O O
+O O
+O
+O I-trsp_STATION O O O
+O O O
+O O O O B-loc_WATERSIDE I-loc_WATERSIDE O O B-trsp_STATION O O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE
+O O O O O O O O O O O O O O O O O
+O O O O B-loc_MAIN O O O O O O O O O O
+O O B-food_MAIN I-food_MAIN I-food_MAIN O O O O O O O
+O O O O O O O O O O O
+O O O O O O O O O O O O O O O O O O O O
+O O
+O O
+O O
+O O O O O O O O O O O O
+O O
+O O O
+O O
+O O O O O O O O O O O O B-time_MAIN O
+O O O O O O O O O O B-trsp_TYPE O B-loc_MAIN O O O O
+O O
+O O
+O O O O O O O O O O O O B-loc_RESTAURANT O B-loc_MAIN O O B-loc_WATERSIDE I-loc_WATERSIDE I-loc_WATERSIDE O O
+O O O O O O O B-loc_ATTRACTION O
+O O O O O O O O O
+O
+O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O I-loc_RESTAURANT O
+O O O O O O O O O
+O O O O O
+O O O O O O O O O O O O O O O
+O O O O O
+O O B-food_MAIN O O O O O O
+O O O O O O
+O O O O
+O O O O O O O O O B-det_PRICE O O O O
+O O
+O O O O O O O O
+O O O B-food_MAIN O O O O
+O O O O B-food_MAIN O
+O O O O O
+O O O O B-food_MAIN O
+O O
+O O
+O O O O O O O O O B-det_MAIN I-det_MAIN O
+O O O O O O O O O O O O O O O O
+O O O B-time_START O
+O O O O
+O O O O O O B-det_MAIN I-det_MAIN O
+O O O O O O O B-time_MAIN O
+O O
+O O B-time_END O
+O O O O O O O
+O O B-time_END O
+O O O O B-food_MAIN
+O O O B-det_MAIN I-det_MAIN O O O O O O O
+O O
+O O O O
+O O O O
+O O
+O O O O O O
+O O O O B-food_MAIN I-food_MAIN I-food_MAIN O O O O O B-food_MAIN I-food_MAIN I-food_MAIN O O
+O
+O O O O
+O O
+O O O
+O O
+O O O O B-time_MAIN I-time_MAIN O O O O O
+O O B-time_MAIN O O O O O
+O O O O O O
+O O O O O O B-trsp_TYPE O O O
+O B-time_MAIN O
+O O
+O O B-time_MAIN O O
+O O O O O
+O O
+O O O O O O O O
+O O O O O
+O O O O O O B-area_COUNTRY O O O O
+O O B-food_MAIN O O O B-food_MAIN O O O O
+O O
+O O O O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O
+O O O O
+O O
+O O O
+O O O O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O
+O O
+O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O B-loc_RESTAURANT I-loc_RESTAURANT O B-loc_WATERSIDE I-loc_WATERSIDE O
+O O O O
+O O
+O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O B-loc_RESTAURANT
+O O O O O O O O O O O
+O O O O B-det_EVENT O O O O B-loc_RESTAURANT O
+O O O O O B-food_MAIN O O
+O O O B-food_MAIN O
+O O B-det_EVENT O
+O O O O B-loc_RESTAURANT O O O O
+O O O O
+O O O O
+O O O O O O B-det_PRICE O O O
+O I-det_PRICE O O O O O O O O O O O
+O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O O O O O O O O O O O O
+O O O O O
+O O O O O B-food_MAIN B-loc_RESTAURANT O
+O O O O O O O O O O
+O I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O O O O O O O B-food_MAIN O O
+O O O O
+O I-loc_SHOP O O O O O O O O O O O O
+O O O O O O O O O O O
+O O
+O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O O O O O O O O B-food_MAIN O B-food_MAIN O O O O O
+O O O O
+O O O O O O O O O O B-det_MAIN I-det_MAIN
+O O O O O O O O O O O O O B-food_MAIN
+O O O O
+O O O O
+O O O O O O O O B-det_PRICE O
+O O B-time_START O B-time_END B-food_MAIN
+O O B-time_INTERVAL I-time_INTERVAL O O O O O O O
+O O O O O O O B-time_START O B-time_END O
+O O O O
+O O O B-food_MAIN O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O
+O O O O O O O
+O O O O B-food_MAIN O O O O O
+O O O O O B-food_MAIN O
+O O O O O O O O
+O O O O O O O O O B-food_MAIN O
+O O O O O O
+O O O O O O O O
+O O O O
+O O
+O O O O
+O O
+O O O
+O O O O
+O O O O O O O O O O O B-loc_RESTAURANT O
+O O B-loc_RESTAURANT O O B-loc_RESTAURANT O O O
+O O O O O O
+O B-loc_RESTAURANT O
+O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O B-loc_RESTAURANT O
+O
+O O
+O O O O O O O O B-time_INTERVAL I-time_INTERVAL O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O
+O I-time_INTERVAL O O B-loc_RESTAURANT O O O O O
+O O O O O O O O O O
+O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O
+O O O O O O O O B-loc_ATTRACTION I-loc_ATTRACTION
+O O O O O O O B-trsp_TYPE O O O O O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O O O O
+O O O O O B-trsp_TYPE O O B-loc_CULTURAL I-loc_CULTURAL O O B-loc_HOTEL O O O
+O O O O O O O
+O O O O
+O O
+O O O
+O O
+O I-loc_RESTAURANT I-loc_RESTAURANT O
+O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O O O
+O O O O
+O O O O
+O I-loc_RESTAURANT I-loc_RESTAURANT O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O
+O O O O O O
+O O O O
+O O O O O
+O I-loc_RESTAURANT O O O O
+O O
+O O
+O O O O O O O O O O O O O O O
+O O O O O O
+O O O O O O O
+O O
+O O O O O O O O
+O O O O O O B-fee_MAIN I-fee_MAIN B-time_INTERVAL O O O O
+O O
+O O B-det_MAIN I-det_MAIN O
+O O O O O B-det_MAIN I-det_MAIN O B-det_MAIN O
+O O O O
+O O O O O
+O O O O
+O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O O O O B-fee_MAIN I-fee_MAIN I-fee_MAIN O
+O O
+O I-fee_MAIN I-fee_MAIN O O O O O O
+O O
+O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O
+O O O B-food_MAIN O B-fee_MAIN O
+O O O O O
+O O
+O I-fee_SERVICES I-fee_SERVICES O O O
+O O
+O O O
+O O O O O O O O O O O O
+O O O O O O
+O O O O O O
+O O O O O O O O
+O O O O O O O O O O O O
+O O O O O O O O O O
+O O O O O O O B-det_EVENT O O O O O
+O O O
+O O O O O
+O O
+O O O O O
+O O O O O O
+O O O O O O O O O
+O O O O O
+O O
+O O O O O O O O O O
+O O O B-det_EVENT I-det_EVENT O O O O
+O O O O O O O O O O O O O O
+O O O O O O O O B-loc_RESTAURANT O O O
+O O O O O B-loc_RESTAURANT O O O O O O O O
+O O
+O O
+O O O O
+O O O O O O
+O O O O B-loc_RESTAURANT O
+O O O O O O O O O O O O O O O O O B-loc_RESTAURANT O O O
+O O O O O
+O O O O O O O O O O O O
+O O O O O O
+O O O O O O O O O
+O O O O O O
+O O O O
+O O O O O B-loc_TEMPLE O O O O
+O O O
+O O O O O O O
+O O O O O O O O B-loc_WATERSIDE I-loc_WATERSIDE O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O
+O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O
+O O O O O O O O
+O O O O
+O O
+O O
+O O O O O O O
+O O O O O O O O O O O O B-area_CITY O O O B-food_MAIN I-food_MAIN O
+O O O O O O O O
+O O O
+O O O O O B-food_MAIN I-food_MAIN O
+O O O O O O O O O O
+O O O O O O O
+O O O O O O O
+O O O O
+O O O O O
+O O O B-food_MAIN O O O O O O O O O O O O O
+O O O O O O O
+O O O O O O O O
+O O O O O O O O O O B-food_MAIN I-food_MAIN
+O O O
+O I-food_MAIN O
+O O O O O O O O O O O
+O O O O
+O O O O
+O O
+O O O O O O O O O
+O O O O O O O O O O O O O O O
+O O O O O O O
+O O
+O O O B-food_MAIN O
+O O O
+O B-food_MAIN O
+O O O O O O O
+O O O O O O B-food_MAIN O
+O
+O O O
+O O O O O O O O
+O O B-food_MAIN B-food_MAIN O O O
+O O O O O O O O O O O O O
+O O O O O O O O O O O B-loc_RESTAURANT O
+O O O O O O B-det_EVENT O O O O O O O B-loc_RESTAURANT O O
+O O O O O O O O O O O B-det_EVENT
+O O O O O B-time_INTERVAL I-time_INTERVAL O O O
+O O
+O O
+O O
+O O
+O O O O
+O O O O
+O O O O O O O O O O O O B-det_MAIN O
+O O O O O O O O O O B-time_INTERVAL
+O O O O O O O O O
+O I-fee_SERVICES I-fee_SERVICES O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O O O B-det_EVENT O B-food_MAIN
+O O B-time_INTERVAL O O O O O
+O O O O O O O O B-time_INTERVAL O
+O O
+O O B-time_INTERVAL O O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O O O O O O O O O O O
+O O
+O O O O O O O O O O
+O O O O
+O O O O O O O
+O O O O O O O O
+O B-weather_MAIN O O O O O O O
+O O O O O O O O O O O O O O O O
+O O O B-weather_MAIN O
+O O B-time_DATE I-time_DATE I-time_DATE I-time_DATE O
+O O O O O O O O O
+O O
+O O O O O O O O O O O O O B-weather_MAIN
+O O O O O B-time_INTERVAL O O O B-weather_MAIN O B-area_CITY O O O
+O O B-weather_MAIN O O O B-weather_MAIN I-weather_MAIN I-weather_MAIN O B-weather_MAIN I-weather_MAIN O B-weather_MAIN I-weather_MAIN O O
+O B-weather_MAIN O
+O B-weather_MAIN O O O O O O B-time_MAIN O B-time_MAIN O
+O O
+O O O O O O O O O O O
+O O
+O O
+O O O O O
+O O O
+O O O B-weather_MAIN O O O O
+O O O B-weather_MAIN O O O B-time_MAIN O B-time_MAIN I-time_MAIN O
+O O O O
+O O O O O
+O O O O O O O
+O O
+O O B-det_ACCESS O O O O O O O O O O
+O O O
+O O O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O
+O O O O
+O O
+O O O O O O O O B-fee_SERVICES I-fee_SERVICES O
+O O O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O O
+O O
+O O O O B-fee_SERVICES I-fee_SERVICES O
+O O O O O O O O O
+O O O O O O
+O O O O
+O O O O
+O O O O O O O O O B-fee_MAIN I-fee_MAIN O O O
+O O O O
+O O O O B-food_MAIN O B-det_NATURE O
+O B-food_MAIN B-time_MAIN O
+O I-loc_GARDEN O O O
+O O
+O O O O O O O O O O O O O
+O O O O O O O O
+O O O B-area_DISTRICT I-area_DISTRICT O O O O B-loc_HOTEL O O O O O B-loc_HOTEL O
+O O O O O O O O O O O
+O O O O O O B-loc_HOTEL O O O O O
+O O O O O O
+O O O O O
+O O O O O
+O O
+O O
+O O O O O O O O O
+O O O B-loc_HOTEL O O O O O
+O B-loc_HOTEL I-loc_HOTEL O
+O O O O O O B-loc_HOTEL B-loc_HOTEL O O B-trsp_STATION I-trsp_STATION O
+O O O O O O
+O O
+O O
+O O O O O O B-area_DISTRICT I-area_DISTRICT O O
+O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O O B-trsp_TYPE O O B-loc_GARDEN O
+O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O O O O O O
+O O O B-trsp_MAIN I-trsp_MAIN I-trsp_MAIN O
+O O O B-trsp_TYPE B-trsp_MAIN I-trsp_MAIN I-trsp_MAIN O O O O O O
+O O O O O B-trsp_TYPE I-trsp_TYPE O B-trsp_TYPE I-trsp_TYPE O
+O O O O O O O
+O O O O O O O O O O B-fee_SERVICES O O B-trsp_TYPE I-trsp_TYPE O
+O O O O O O O B-fee_SERVICES I-fee_SERVICES O O O O O O
+O O O O
+O O O O
+O O O O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN
+O O B-time_START O O O O O O
+O O O O
+O O B-time_MAIN O
+O O O
+O O
+O I-time_START O O O B-time_INTERVAL O
+O O
+O O O O O
+O O O O B-loc_GARDEN O B-time_START O O B-time_INTERVAL O
+O O O O
+O O O O O O O O O O O O O O O O
+O O O B-time_INTERVAL O O O
+O O B-loc_ATTRACTION O O O O O B-time_INTERVAL O O O O O
+O O O O B-loc_GARDEN I-loc_GARDEN O
+O O O O O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O B-loc_GARDEN O
+O O O O B-det_NATURE B-loc_GARDEN O
+O O O O O O
+O O O O O O B-det_NATURE I-det_NATURE O
+O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O O B-det_NATURE O O O O O O O B-det_NATURE I-det_NATURE I-det_NATURE O
+O O
+O O O O
+O O
+O O
+O O O O
+O O O O
+O O B-det_NATURE I-det_NATURE I-det_NATURE O
+O O
+O O O
+O O O
+O O O O
+O O
+O O O O O O O O O O O O
+O O O O O O B-det_NATURE O O O O
+O O O O O O O O O O O O
+O O O
+O O
+O O
+O O O O O O O O O
+O O
+O O
+O O O O O B-det_VIEW O O O O O
+O O O O O O O O O O
+O O O O O O O O
+O O O B-loc_RESTAURANT O O O O O B-loc_GARDEN I-loc_GARDEN O
+O O
+O O O O O
+O O O O O B-food_MAIN O O O
+O O O O O O
+O O
+O O
+O O O O O O O B-loc_RESTAURANT O
+O O O O B-loc_GARDEN I-loc_GARDEN O
+O I-det_PRICE O O O O O O O O B-food_MAIN O O O O O O
+O O O O O O B-food_MAIN
+O O O O B-fee_SERVICES O B-fee_SERVICES I-fee_SERVICES
+O O O
+O O B-fee_SERVICES I-fee_SERVICES O
+O O O
+O O O O O O O B-loc_RESTAURANT O
+O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O
+O O O O O O O O
+O O O O B-loc_RESTAURANT O
+O O O O O O O O O O O O
+O O O O O O B-fee_SERVICES O O O O O O
+O I-fee_MAIN O
+O O O
+O O O O O O
+O O
+O O O O O O O O O O O O O
+O O O O O O O O O O
+O O O O O
+O O O B-fee_SERVICES I-fee_SERVICES O O O
+O O O O O
+O O O O
+O O O O O O O O O
+O O O O O O O O O O O
+O O O O O O B-food_MAIN O O
+O O O O
+O O O O O O O O O O O O
+O O O O O O O B-fee_SERVICES I-fee_SERVICES I-fee_SERVICES O B-fee_SERVICES I-fee_SERVICES O O
+O O O O O O B-loc_RESTAURANT O
+O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O
+O O O O O
+O O O
+O O O O O O O O
+O O O O O O O O O O O O O O O
+O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O O B-loc_RESTAURANT O
+O O O O O O O B-loc_RESTAURANT O O B-loc_RESTAURANT I-loc_RESTAURANT O
+O O B-loc_GARDEN I-loc_GARDEN O
+O O O O
+O O
+O O O O
+O I-loc_RESTAURANT O O O O
+O O
+O O
+O O O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O
+O O O O
+O O O O O O O
+O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O
+O O
+O O O O O B-loc_RESTAURANT I-loc_RESTAURANT O O O O O O B-loc_GARDEN I-loc_GARDEN I-loc_GARDEN O
+O O O O O O
+O O O B-food_MAIN O O O O O
+O O O
+O O O O
+O O O O
+O O O O
+O O O O O O O O O O O O O O
+O O
+O O
+O O O O O O O O O O O
+O O
+O O O
+O O
+O O O
+O O O
+O O O O O O O O O O O B-food_MAIN O O O
+O O O O O O O
+O O O O O O O B-fee_MAIN O O B-fee_MAIN O O O
+O O O O O O O B-time_INTERVAL O O O
+O O O B-time_INTERVAL O O O
+O O O O O O O O O O O O
+O O
+O O O O O O O O
+O O O O O O O O O O O O O
+O O B-fee_MAIN I-fee_MAIN I-fee_MAIN O O O O O
+O O O O O O O O O O O O O
+O O O O O B-fee_MAIN I-fee_MAIN O O B-fee_MAIN I-fee_MAIN O
+O O
+O O O O
+O O O O O O O O O
+O O O O O O O O O B-fee_MAIN I-fee_MAIN I-fee_MAIN
+O O O O O B-food_MAIN I-food_MAIN O O O
+O O
+O O O O O
+O O O O O O O O O O O O O O
+O O O O
+O O O O O O B-food_MAIN I-food_MAIN O O O
+O O
+O O O O O O O O O O O B-food_MAIN O O O O O O O
+O O O O O O O O O O O O B-food_MAIN O
+O O
+O O
+O O O O O O O O O O O O O O O O
+O O O O O O B-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O
+O I-loc_RESTAURANT I-loc_RESTAURANT I-loc_RESTAURANT O
+O O O O O O O O
+O I-food_MAIN O
+O B-food_MAIN O O O O
+O O O O O O
+O O O O O O O O O O O O O O O O O O B-food_MAIN I-food_MAIN I-food_MAIN O
+O O O O O O O B-area_COUNTRY O
+O O
+O O O O O
+O O O O O O O
+O O
+O O
+O O O O
+O O O O O O O O O
+O O O O O O O O O O O O O
+O O O O O O O O
+O B-fee_MAIN I-fee_MAIN I-fee_MAIN I-fee_MAIN O O O O O O
+O O O O O O O
+O O O B-loc_HOTEL O O O O O O O O
+O O O O O O O O O
+O O
+O O O O O
+O O O O O O
+O O O O O O O
+O O O O
+O O O B-fee_MAIN I-fee_MAIN I-fee_MAIN O O O O O O O O O
+O O
+O O O O O O O O O O O O O O O
+O O O O O O O O O O O O O O
+O O
+O O
+O O O O O O O O O O B-loc_RESTAURANT O
+O O O O B-food_MAIN O
+O O O O O O O O O O
+O O
+O O
+O O
+O O
+O O O O
+O O O O O O O O O O O O
+O O O O O O O
+O O O O O O O O O
+O O O O O O O B-food_MAIN O O O O
+O O
+O O
+O O
+O O
+O O
+O O O O O O O
+O O O O
+O O O O O O O O O O O
+O O
+O O O O O O O O O O O
+O O O O O O O
+O O
+O O O O
+O O
+O O O O
+O O O
+O O
+O
