@@ -1,7 +1,7 @@
 import os
 import sys
 reload(sys)
-sys.path.insert(0, './src/slu/dstc5/scripts')
+sys.path.insert(0, './src/dstc5/scripts')
 sys.setdefaultencoding('utf-8')
 
 

@@ -4,12 +4,13 @@ import operator
 
 ans = {}
 
-files = [f for f in os.listdir('.') if os.path.isfile(f)]
+files = [f for f in os.listdir('./src/slu/ensemble_tagging')]
+print files
 for f in files:
     if f=='ensemble.py': continue
     count = 0
-    with open(f,'r') as f:
-        for line in f:
+    with open('src/slu/ensemble_tagging/'+f,'r') as ff:
+        for line in ff:
             line = line.strip()
             if count not in ans: ans[count] = {}
             for ind, jj in enumerate(line.split()):
